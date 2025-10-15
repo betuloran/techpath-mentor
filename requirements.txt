@@ -1,0 +1,9 @@
+# RAG Pipeline Kütüphaneleri
+langchain-chroma
+langchain-google-genai
+pydantic
+pypdf 
+langchain-community
+
+# Web Arayüzü
+streamlit

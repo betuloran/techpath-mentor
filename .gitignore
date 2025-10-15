@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# API Keys
+.env
+
+# Vector Database
+chroma_db/
+.chroma/
+
+# Streamlit
+.streamlit/
+
+# data set
+data/ 
+
+# OS
+.DS_Store
+Thumbs.db
