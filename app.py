@@ -1,116 +1,368 @@
-# ==============================================================================
-# PROJE ADIM 4: ÇÖZÜM MİMARİNİZ - RAG Pipeline Kodlaması
-# ==============================================================================
+"""
+TechPath Mentor - Ana Uygulama Dosyası
+"""
 
 import os
-from langchain_community.document_loaders import TextLoader # Metin dosyalarımızı yüklemek için
-from langchain_text_splitters import RecursiveCharacterTextSplitter # Metni parçalara ayırmak için
-from langchain_chroma import Chroma # Vektör veritabanı
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI # Google Embedding ve Generation Modelleri
-from langchain.chains import RetrievalQA # RAG Zincirini kurmak için
-import streamlit as st # Web Arayüzü için
+import streamlit as st
+from dotenv import load_dotenv
 
-# ------------------------------------------------------------------------------
-# 1. VERİ YÜKLEME VE İŞLEME
-# ------------------------------------------------------------------------------
-# Tüm veri dosyalarını yükler ve tek bir liste haline getirir.
-def load_documents(data_path="data"):
-    # Teknik Anlatım: Projemizdeki .txt uzantılı tüm kariyer bilgi dosyaları yüklenir.
-    # TextLoader, veri setimizi LangChain'in anlayacağı 'Document' formatına çevirir.
-    docs = []
-    for file_name in os.listdir(data_path):
-        if file_name.endswith(".txt"):
-            file_path = os.path.join(data_path, file_name)
-            loader = TextLoader(file_path, encoding='utf-8')
-            docs.extend(loader.load())
-    return docs
+from config import APP_TITLE, APP_CAPTION, APP_VERSION, GEMINI_API_KEY
+from data_processing import load_documents
+from rag_pipeline import setup_rag_pipeline, get_pipeline_info
 
-# ------------------------------------------------------------------------------
-# 2. RAG MİMARİSİ HAZIRLIĞI
-# ------------------------------------------------------------------------------
-# RAG pipeline'ının ana bileşenlerini kurar (Embedding, Vektör DB, Zincir).
-def setup_rag_pipeline(documents):
-    # a. Bölme (Chunking) - Teknik Anlatım: 
-    # Metni küçük ve anlamlı parçalara ayırırız (Chunking). 
-    # Bu, LLM'in tek seferde işleyebileceği kadar küçük olmalı ve 
-    # bağlamı korumak için yeterince büyük olmalıdır. (Chunk size 1000)
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-    splits = text_splitter.split_documents(documents)
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
+load_dotenv()
 
-    # b. Embedding Modeli - Teknik Anlatım: 
-    # GoogleGenerativeAIEmbeddings kullanarak metin parçalarını sayısal vektörlere dönüştürürüz.
-    # Bu model, anlamsal karşılaştırma için esastır.
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
 
-    # c. Vektör Veritabanı - Teknik Anlatım: 
-    # Vektörleri depolamak ve hızlıca arama yapmak için lokal bir veritabanı olan Chroma kullanılır.
-    # 'splits' listesindeki parçalar vektörleştirilir ve DB'ye kaydedilir.
-    vectorstore = Chroma.from_documents(documents=splits, embedding=embeddings)
+# ============================================================================
+# CUSTOM CSS 🎨
+# ============================================================================
+def load_custom_css():
+    st.markdown("""
+    <style>
+    /* Ana tema renkleri */
+    :root {
+        --primary-color: #667eea;
+        --secondary-color: #764ba2;
+        --background-color: #f7f9fc;
+        --card-background: #ffffff;
+        --text-primary: #1e293b;
+        --text-secondary: #64748b;
+    }
+    
+    /* Ana başlık */
+    h1 {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        font-size: 2.5rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Chat mesajları */
+    .stChatMessage {
+        background-color: var(--card-background);
+        border-radius: 16px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border: 1px solid #e2e8f0;
+    }
+    
+    /* Kullanıcı mesajı */
+    .stChatMessage[data-testid="user-message"] {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    /* Bot mesajı */
+    .stChatMessage[data-testid="assistant-message"] {
+        background-color: #f8fafc;
+        border-left: 4px solid #667eea;
+    }
+    
+    /* Chat input */
+    .stChatInputContainer {
+        border-radius: 24px;
+        border: 2px solid #e2e8f0;
+        padding: 0.5rem;
+        background-color: white;
+    }
+    
+    .stChatInputContainer:focus-within {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+    
+    [data-testid="stSidebar"] .stMarkdown {
+        color: white;
+    }
+    
+    [data-testid="stSidebar"] h2 {
+        color: white !important;
+        font-weight: 700;
+    }
+    
+    /* Info box */
+    .stAlert {
+        border-radius: 12px;
+        border: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    /* Butonlar */
+    .stButton button {
+        border-radius: 20px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+    }
+    
+    .stButton button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    
+    /* Spinner */
+    .stSpinner > div {
+        border-top-color: #667eea !important;
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #5a67d8;
+    }
+    
+    /* Caption */
+    .stCaption {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+    }
+    
+    /* Expander */
+    .streamlit-expanderHeader {
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+    
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 2rem 0;
+        color: var(--text-secondary);
+        border-top: 1px solid #e2e8f0;
+        margin-top: 3rem;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
-    # d. Geri Çağırma (Retriever) - Teknik Anlatım:
-    # Kullanıcının sorusuna en çok benzeyen (en yakın vektörler) ilk 4 belge parçasını 
-    # (top_k=4) geri çağırması için retriever nesnesini oluştururuz.
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
-
-    # e. Generation Modeli - Teknik Anlatım:
-    # Soruyu ve geri çağrılan bağlamı işleyecek ana dil modelimiz Gemini-2.5-flash'i seçiyoruz.
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.2)
-
-    # f. RAG Zinciri (Chain) - Teknik Anlatım:
-    # Retriever ve LLM'i birleştiren ana RAG zincirini kurarız. 
-    # Bu zincir, bağlamı LLM'e geçirerek halüsinasyonu engeller.
-    qa_chain = RetrievalQA.from_chain_type(
-        llm=llm, 
-        chain_type="stuff", # Geri çağrılan tüm metni tek bir prompt'a sıkıştırır
-        retriever=retriever
-    )
-    return qa_chain
-
-# ------------------------------------------------------------------------------
-# 3. STREAMLIT WEB ARAYÜZÜ (PROJE ADIM 5)
-# ------------------------------------------------------------------------------
-
-# Başlangıçta RAG zincirini yükle ve Streamlit'in hafızasına kaydet (bir kere çalışması için)
+# ============================================================================
+# CHATBOT BAŞLATMA
+# ============================================================================
 @st.cache_resource
 def initialize_chatbot():
+    if not GEMINI_API_KEY:
+        st.error("❌ GEMINI_API_KEY .env dosyasında bulunmalıdır.")
+        return None
+    
+    os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
+    
     try:
-        documents = load_documents()
-        qa_chain = setup_rag_pipeline(documents)
+        with st.spinner("🚀 Chatbot hazırlanıyor..."):
+            documents = load_documents()
+            if not documents:
+                return None
+            qa_chain = setup_rag_pipeline(documents)
+        st.success("✅ Chatbot hazır! Sorularınızı sorabilirsiniz.")
         return qa_chain
     except Exception as e:
-        st.error(f"Hata: Gemini API Anahtarı eksik veya geçersiz. Lütfen GEMINI_API_KEY çevre değişkenini ayarlayın. Detay: {e}")
+        st.error(f"❌ Hata: {e}")
         return None
 
+# ============================================================================
+# ANA UYGULAMA
+# ============================================================================
 def main():
-    st.title("👨‍💻 Kariyer Yolu Asistanı (RAG Chatbot)")
-    st.caption("Bu chatbot, yapay zeka ve web geliştirme gibi ana başlıklardaki IT kariyerleri hakkında derlenmiş verilere dayanarak cevaplar üretir.")
-
-    # RAG zincirini yükle
-    qa_chain = initialize_chatbot()
+    # Sayfa yapılandırması
+    st.set_page_config(
+        page_title="TechPath Mentor",
+        page_icon="🎯",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
     
+    # Custom CSS yükle
+    load_custom_css()
+    
+    # Header
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.title("TechPath Mentor")
+        st.caption("🌟 Bilgisayar Mühendisliği Kariyer Rehberi | Yapay Zeka Destekli Asistan 🌟")
+    
+    # CHATBOT'U BAŞLAT  
+    qa_chain = initialize_chatbot()
     if qa_chain is None:
+        st.warning("⚠️ Chatbot başlatılamadı. Lütfen hata mesajlarını kontrol edin.")
         return
 
-    # Kullanıcıdan Girdi Alma
-    query = st.text_input("Öğrencilerin merak ettiği kariyer sorularını buraya yazın:", placeholder="Web geliştirmede hangi backend framework'ler popülerdir?")
+    # Sidebar
+    with st.sidebar:
+        st.markdown("""
+        <div style='text-align: center; padding: 2rem 0;'>
+            <div style='font-size: 4rem;'>🎯</div>
+            <h2 style='margin-top: 1rem; color: white;'>TechPath Mentor</h2>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("---")
+        
+        # Kapsam
+        st.markdown("### 📚 Kapsam Alanları")
+        areas = [
+            ("🤖", "AI & Veri Bilimi", "Python, TensorFlow, PyTorch"),
+            ("🌐", "Web Geliştirme", "React, Node.js, Django"),
+            ("🔒", "Siber Güvenlik", "Pentesting, SOC, Sertifikalar"),
+            ("🏢", "Kurumsal IT", "Banka, Telekom Rolleri")
+        ]
+        
+        for emoji, title, desc in areas:
+            st.markdown(f"""
+            <div style='background: rgba(255,255,255,0.1); 
+                        padding: 1rem; 
+                        border-radius: 12px; 
+                        margin: 0.5rem 0;
+                        border-left: 3px solid white;'>
+                <strong>{emoji} {title}</strong><br>
+                <small style='opacity: 0.8;'>{desc}</small>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        st.markdown("---")
+        
+        # Örnek sorular
+        st.markdown("### 💡 Örnek Sorular")
+        example_questions = [
+            "Web geliştirmede hangi frameworkler var?",
+            "React nedir ve nerede kullanılır?",
+            "Siber güvenlik için hangi sertifikalar?",
+            "Data Science için Python'da ne öğrenmeliyim?"
+        ]
+        
+        for i, q in enumerate(example_questions, 1):
+            if st.button(f"💬 {q[:30]}...", key=f"example_{i}", use_container_width=True):
+                st.session_state.example_query = q
+                st.rerun()
+        
+        st.markdown("---")
+        
+        # Teknik detaylar
+        with st.expander("⚙️ Teknik Bilgiler"):
+            pipeline_info = get_pipeline_info()
+            for key, value in pipeline_info.items():
+                st.text(f"{key}: {value}")
+        
+        st.markdown("---")
+        st.markdown(f"""
+        <div style='text-align: center; color: rgba(255,255,255,0.7);'>
+            <small>Version {APP_VERSION}</small><br>
+            <small>Akbank GenAI Bootcamp 2025</small>
+        </div>
+        """, unsafe_allow_html=True)
 
-    if query:
-        with st.spinner("Cevap aranıyor..."):
-            # RAG zincirini çalıştırma (Retrieval ve Generation)
-            response = qa_chain.invoke(query)
+    # Ana chat alanı
+    st.markdown("---")
+    
+    # Session state
+    if "messages" not in st.session_state:
+        st.session_state.messages = []
+    
+    # ⭐ ÖRNEK SORU İŞLEME - ARTIK qa_chain ERİŞİLEBİLİR! ⭐
+    if hasattr(st.session_state, 'example_query'):
+        example_prompt = st.session_state.example_query
+        delattr(st.session_state, 'example_query')
+        
+        # Kullanıcı mesajını ekle
+        st.session_state.messages.append({"role": "user", "content": example_prompt})
+        
+        # Bot yanıtını oluştur
+        with st.spinner("🤔 Düşünüyorum..."):
+            try:
+                response = qa_chain.invoke(example_prompt)  # ← ARTIK ÇALIŞIR!
+                answer = response['result']
+                st.session_state.messages.append({"role": "assistant", "content": answer})
+            except Exception as e:
+                error_msg = f"😔 Üzgünüm, bir hata oluştu: {str(e)}"
+                st.session_state.messages.append({"role": "assistant", "content": error_msg})
+        
+        st.rerun()
+    
+    # Chat geçmişi
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"], avatar="👤" if message["role"] == "user" else "🤖"):
+            st.markdown(message["content"])
+    
+    # Chat input
+    if prompt := st.chat_input("💬 Kariyer hakkında merak ettiğin bir şey sor..."):
+        # Kullanıcı mesajı
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user", avatar="👤"):
+            st.markdown(prompt)
+        
+        # Bot yanıtı
+        with st.chat_message("assistant", avatar="🤖"):
+            # Basit selamlamaları kontrol et
+            simple_greetings = [
+                "merhaba", "selam", "hey", "hi", "hello", 
+                "günaydın", "iyi günler", "selamlar", "slm"
+            ]
+            prompt_lower = prompt.lower().strip().rstrip("!?.,:;")
             
-            # Sonucu Ekrana Basma
-            st.markdown("---")
-            st.subheader("Cevap:")
-            st.info(response['result'])
-            # Teknik İpucu: RAG'ın çalıştığını göstermek için bazen 'source_documents' da gösterilir, 
-            # ancak RetrievalQA ile bunu görmek için zincirin farklı bir versiyonu (return_source_documents=True) gerekir.
-            st.caption("Cevap, derlenmiş kariyer bilgileri veri setimize dayanarak üretilmiştir.")
+            # Basit selamlama mı?
+            is_greeting = (
+                prompt_lower in simple_greetings or 
+                len(prompt.split()) <= 2 and any(g in prompt_lower for g in simple_greetings)
+            )
+            
+            if is_greeting:
+                # Kısa karşılama mesajı
+                welcome_msg = """👋 **Merhaba!** Bugün ne öğrenmek istersin? 🚀"""
+                
+                st.markdown(welcome_msg)
+                st.session_state.messages.append({"role": "assistant", "content": welcome_msg})
+            
+            else:
+                # Normal RAG sorgusu
+                with st.spinner("🤔 Düşünüyorum..."):
+                    try:
+                        response = qa_chain.invoke(prompt)
+                        answer = response['result']
+                        st.markdown(answer)
+                        st.session_state.messages.append({"role": "assistant", "content": answer})
+                    except Exception as e:
+                        error_msg = f"😔 Üzgünüm, bir hata oluştu: {str(e)}"
+                        st.error(error_msg)
+                        st.session_state.messages.append({"role": "assistant", "content": error_msg})
+    
+    # Welcome message (ilk açılışta)
+    if len(st.session_state.messages) == 0:
+        with st.chat_message("assistant", avatar="🤖"):
+            st.markdown("""
+            👋 **Merhaba! Ben TechPath Mentor.**
+            
+            Sana bilgisayar mühendisliği kariyeri hakkında yardımcı olabilirim. 
+            
+            🎯 **Sorabilecekleriniz:**
+            - Hangi teknolojileri öğrenmeliyim?
+            - Kariyer yolları nelerdir?
+            - Frameworkler, araçlar, sertifikalar...
+            
+            Hadi başlayalım! Merak ettiğin bir şey sor 👇
+            """)
 
 
 if __name__ == "__main__":
-    # Gemini API anahtarının kontrolü
-    if not os.environ.get("GEMINI_API_KEY"):
-        st.error("Lütfen GEMINI_API_KEY çevre değişkenini ayarlayın ve tekrar deneyin.")
-    else:
-        main()
+    main()
