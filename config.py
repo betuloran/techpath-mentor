@@ -19,7 +19,7 @@ LLM_TEMPERATURE = 0.4
 
 # Veri İşleme Ayarları
 DATA_PATH = "data"
-CHUNK_SIZE = 1500
+CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 300
 
 # Retriever Ayarları
