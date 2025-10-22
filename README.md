@@ -138,12 +138,11 @@ streamlit run app.py
 6. Tarayıcınızda http://localhost:8501 adresine gidin.
 
 ## 📧 İletişim
-Projeyle ilgili herhangi bir sorunuz varsa lütfen bizimle iletişime geçin.
+Projeyle ilgili herhangi bir sorunuz varsa lütfen bizimle iletişime geçin.  
 
-- E-posta: betul.oran2@gmail.com
-- LinkedIn: linkedin.com/in/betüloran
-- GitHub: github.com/betuloran
-
+📩 **E-posta:** [betul.oran2@gmail.com](mailto:betul.oran2@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/betüloran](https://www.linkedin.com/in/betüloran)  
+🐙 **GitHub:** [github.com/betuloran](https://github.com/betuloran)
 
 
 
