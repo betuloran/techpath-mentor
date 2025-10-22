@@ -14,14 +14,6 @@ Yeni mezunların kariyer hedeflerine uygun sektörleri ve rolleri keşfetmelerin
 Güncel bilgiye dayalı, spesifik ve uygulanabilir tavsiyeler sunar. <br>
 Sektör trendlerini ve iş ilanlarını analiz ederek gerçekçi kariyer önerileri verir. <br>
 
-### 💡 Neden RAG?
-Geleneksel chatbot'ların aksine, RAG mimarisi:
-
-✅ Güncel ve spesifik bilgilere erişim sağlar. <br>
-✅ Halüsinasyon riskini minimize eder. <br>
-✅ Kaynak doğrulanabilir yanıtlar üretir. <br>
-✅ Domain-specific (alan-odaklı) uzmanlık sunar. <br>
-
 ### Ana Özellikler
 
 * **Özel Türkçe Veri Setleri:** Global terimlerin yanı sıra, Türkiye IT ekosistemine özel bilgileri içeren JSON veri setleri kullanılır.
@@ -29,57 +21,63 @@ Geleneksel chatbot'ların aksine, RAG mimarisi:
 * **Kolay Kullanım:** Streamlit tabanlı web arayüzü ile hızlı ve etkileşimli bir sohbet deneyimi sunar.
 * **Kaynak Gösterimi:** Yanıtların hangi veri setlerine dayandığı gösterilerek güvenilirlik artırılır.
 
-## Veri Seti Metodolojisi (Derleme ve Kaynaklandırma)
+## 🌐 Web Arayüzü & Deployment
+
+#### 1. 💬 Örnek Kullanım Senaryosu: Web Geliştirme Sorgusu <br>
+
+#### Kullanıcı Sorusu:<br>
+"Web geliştirmede hangi frameworkler var ve hangisini öğrenmeliyim?" <br>
+
+#### Beklenen Yanıt:<br>
+- Backend ve Frontend analizi <br>
+- Framework karşılaştırması <br>
+- Her birinin kullanım alanları <br>
+
+#### 2. Sidebar'da Tıklanabilir Örnek Sorular
+
+- "Web geliştirmede hangi frameworkler var?"
+- "React nedir ve nerede kullanılır?"
+- "Siber güvenlik için hangi sertifikalar?"
+- "Data Science için Python'da ne öğrenmeliyim?"
+
+#### 3. Basit selamlamalar için (merhaba, selam, hey) RAG pipeline'ı kullanmadan hızlı yanıt
+
+```bash
+👋 Merhaba! Bugün ne öğrenmek istersin? 🚀
+```
+
+🔗 Canlı Demo Linki
+
+
+## 📊 Veri Seti Metodolojisi (Derleme ve Kaynaklandırma)
 
 ### 🗂️ Veri Kaynağı ve Yapısı
-Proje, 157 adet JSON dokümanı içeren özenle hazırlanmış bir bilgi bankası kullanmaktadır.
-Veri Toplama Metodolojisi
-Veri seti, aşağıdaki kaynaklardan derlenerek oluşturulmuştur:
+- Proje, 157 adet JSON dokümanı içeren özenle hazırlanmış bir bilgi bankası kullanmaktadır.
+- Veri seti 14 ana kategori altında yapılandırılmıştır.
+- Veri seti, aşağıdaki kaynaklardan derlenerek oluşturulmuştur:
 
-* **İş İlanları Analizi (LinkedIn, Kariyer.net, Indeed)** 
+#### İş İlanları Analizi (LinkedIn, Kariyer.net, Indeed)
 
-Sektör bazında aranan teknolojiler
-Beklenen beceriler ve sertifikalar
-Maaş aralıkları ve iş tanımları
+- Sektör bazında aranan teknolojiler
+- Beklenen beceriler ve sertifikalar
+- Maaş aralıkları ve iş tanımları
 
-* **Sektör Raporları**
+#### Sektör Raporları
 
-StackOverflow Developer Survey
-GitHub State of the Octoverse
-Gartner Technology Trends
+- StackOverflow Developer Survey
+- GitHub State of the Octoverse
 
-* **Akademik ve Kurumsal Kaynaklar**
+#### Akademik ve Kurumsal Kaynaklar
 
-Üniversite müfredatları
-Bootcamp programları
-Sertifika kuruluşları (CompTIA, Cisco, AWS vb.)
-### Veri Seti İçeriği
-
-### Veri Seti Kategorileri
-Veri seti 14 ana kategori altında yapılandırılmıştır:
-
-| Kategori | Dosya Sayısı | İçerik |
-| :--- | :--- | :--- |
-| **🤖 AI & Veri Bilimi** | 25 | Yanıt üretimi için kullanılan üretken model. (Not: Bu model, Gemini 2.5 Flash'ın eski, deneysel bir versiyonudur.) |
-| **🌐 Web Geliştirme** | 30 | Metinleri vektöre dönüştürme modeli. |
-| **🔒 Siber Güvenlik** | 20 | RAG pipeline bileşenlerini (Loader, Splitter, DB, Chain) yönetme. |
-| **🎮 Oyun Geliştirme** | 12 | Hızlı prototipleme ve web arayüzü oluşturma. |
-| **📱 Mobil Geliştirme** | 15 | Vektörlerin hızlı erişim için bellekte depolanması. |
-| **☁️ Cloud & DevOps** | 18 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **🎨 UI/UX Design** | 8 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **🔙 Backend & API** | 10 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **📈 QA & Testing** | 5 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **🏢 Kurumsal IT** | 20 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **💼 Kariyer Geliştirme** | 6 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **🇹🇷 Türkiye IT Ekosistemi** | 4 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **🗣️ Soft Skills** | 3 | JSON dosyalarından sadece `icerik` alanını çekme. |
-| **👩🏼‍💼 Mülakat Hazırlığı** | 12 | JSON dosyalarından sadece `icerik` alanını çekme. |
-
+- Üniversite müfredatları
+- Bootcamp programları
+- Sertifika kuruluşları
+  
 ## 🛠️ Kullanılan Teknolojiler & Metodoloji
 
-Frontend: Streamlit
-GenAI: Gemini 2.0 Flash, Google Embedding, LangChain
-Vector Database: FAISS
+- Frontend: Streamlit <br>
+- GenAI: Gemini 2.0 Flash, Google Embedding, LangChain <br>
+- Vector Database: FAISS <br>
 
 ## 📁 Proje Dosya Yapısı
 
@@ -121,13 +119,14 @@ cd techpath-mentor
 3. Gerekli paketleri kurun:
 
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 4. Bir .env dosyası oluşturun ve Gemini API anahtarınızı ekleyin:
 
 ```bash
-GEMİNİ_API_KEY=your_api_key
+GEMINI_API_KEY=your_api_key_here
 ```
 
 5. Uygulamayı çalıştırın:
@@ -135,6 +134,15 @@ GEMİNİ_API_KEY=your_api_key
 ```bash
 streamlit run app.py
 ```
+
+6. Tarayıcınızda http://localhost:8501 adresine gidin.
+
+📧 İletişim
+Projeyle ilgili herhangi bir sorunuz varsa lütfen bizimle iletişime geçin.
+
+- E-posta: betul.oran2@gmail.com
+- LinkedIn: linkedin.com/in/betüloran
+- GitHub: github.com/betuloran
 
 
 
