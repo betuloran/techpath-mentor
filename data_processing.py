@@ -4,14 +4,16 @@ Kariyer rehberi dökümanlarını yükleme ve işleme fonksiyonları
 """
 
 import os
+import json
 import streamlit as st
-from langchain_community.document_loaders import TextLoader
+from langchain_community.document_loaders import JSONLoader 
+from langchain.schema import Document
 from config import DATA_PATH
 
 
 def load_documents(data_path=DATA_PATH):
     """
-    Veri klasöründeki tüm .txt dosyalarını yükler.
+    Veri klasöründeki tüm .json dosyalarını yükler.
     
     Args:
         data_path (str): Veri dosyalarının bulunduğu klasör yolu
@@ -25,28 +27,52 @@ def load_documents(data_path=DATA_PATH):
         st.error(f"❌ Hata: '{data_path}' klasörü bulunamadı.")
         return []
 
-    # Klasördeki tüm .txt dosyalarını yükle
-    txt_files = [f for f in os.listdir(data_path) if f.endswith(".txt")]
+    # Klasördeki tüm .json dosyalarını bul
+    json_files = [f for f in os.listdir(data_path) if f.endswith(".json")]
     
-    if not txt_files:
-        st.error(f"❌ Hata: '{data_path}' klasöründe .txt dosyası bulunamadı.")
+    if not json_files:
+        st.error(f"❌ Hata: '{data_path}' klasöründe .json dosyası bulunamadı.")
         return []
     
     # Her dosyayı yükle
-    for file_name in txt_files:
+    for file_name in json_files:
         file_path = os.path.join(data_path, file_name)
         try:
-            loader = TextLoader(file_path, encoding='utf-8')
-            loaded_docs = loader.load()
+            # Önce JSON'u okuyup formatını kontrol et
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
             
-            # Her belgeye kaynak dosya adını ekle
-            for doc in loaded_docs:
-                doc.metadata['source_file'] = file_name
+            # Liste mi yoksa tek obje mi?
+            if isinstance(data, list):
+                # Liste ise her elemanı işle
+                for item in data:
+                    if isinstance(item, dict) and 'icerik' in item:
+                        doc = Document(
+                            page_content=item['icerik'],
+                            metadata={
+                                'source_file': file_name,
+                                'baslik': item.get('baslik', 'Başlıksız')
+                            }
+                        )
+                        docs.append(doc)
+            elif isinstance(data, dict) and 'icerik' in data:
+                # Tek obje ise direkt ekle
+                doc = Document(
+                    page_content=data['icerik'],
+                    metadata={
+                        'source_file': file_name,
+                        'baslik': data.get('baslik', 'Başlıksız')
+                    }
+                )
+                docs.append(doc)
             
-            docs.extend(loaded_docs)
-            
+        except json.JSONDecodeError as e:
+            st.error(f"❌ {file_name} JSON format hatası: {e}")
         except Exception as e:
             st.error(f"❌ {file_name} yüklenemedi: {e}")
+    
+    if docs:
+        st.success(f"✅ {len(docs)} döküman başarıyla yüklendi!")
     
     return docs
 
@@ -54,12 +80,6 @@ def load_documents(data_path=DATA_PATH):
 def get_document_stats(documents):
     """
     Yüklenen dökümanlar hakkında istatistik bilgisi verir.
-    
-    Args:
-        documents (list): Document nesnelerinin listesi
-        
-    Returns:
-        dict: İstatistik bilgileri içeren dictionary
     """
     if not documents:
         return None
