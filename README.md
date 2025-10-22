@@ -64,7 +64,7 @@ https://betuloran-techpath-mentor-app-nyvkr2.streamlit.app/
 - Ölçeklenebilir Mimari: Yeni dokümanlar eklendikçe sistem otomatik olarak daha fazla konu hakkında bilgi sahibi oluyor.
 
 #### 📈 İyileştirme Potansiyeli
-Mevcut sonuçlar başarılı olsa da, sistemin daha da geliştirilmesi için şu alanları belirledi:
+Mevcut sonuçlar başarılı olsa da, sistemin daha da geliştirilmesi için şunlar belirlendi:
 ##### Kısa Vadeli Hedefler:
 
 📚 Veri setini 300+ dokümana çıkararak kapsam genişletmek. <br>
