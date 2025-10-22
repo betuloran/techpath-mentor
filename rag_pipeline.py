@@ -5,7 +5,7 @@ Retrieval-Augmented Generation pipeline'ını oluşturma ve yönetme
 
 import streamlit as st
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_chroma import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
@@ -22,12 +22,13 @@ from config import (
 )
 
 
-def setup_rag_pipeline(documents):
+def setup_rag_pipeline(documents, session_id=None):
     """
     RAG Pipeline'ı oluşturur: Chunking, Embedding, VectorDB, Retriever, LLM
     
     Args:
         documents (list): İşlenecek Document nesnelerinin listesi
+        session_id (str): Session benzersiz ID'si (FAISS için kullanılmıyor)
         
     Returns:
         RetrievalQA: Sorgulanabilir RAG chain nesnesi
@@ -44,11 +45,10 @@ def setup_rag_pipeline(documents):
         # 2. EMBEDDING: Gemini embedding modeli
         embeddings = GoogleGenerativeAIEmbeddings(model=EMBEDDING_MODEL)
 
-        # 3. VECTOR DATABASE: ChromaDB (in-memory)
-        vectorstore = Chroma.from_documents(
-            documents=splits, 
-            embedding=embeddings,
-            persist_directory=None  # Memory'de tut
+        # 3. VECTOR DATABASE: FAISS
+        vectorstore = FAISS.from_documents(
+            documents=splits,
+            embedding=embeddings
         )
 
         # 4. RETRIEVER: Benzerlik araması
@@ -99,5 +99,6 @@ def get_pipeline_info():
         'llm_model': LLM_MODEL,
         'chunk_size': CHUNK_SIZE,
         'chunk_overlap': CHUNK_OVERLAP,
-        'top_k_results': TOP_K_RESULTS
+        'top_k_results': TOP_K_RESULTS,
+        'vectorstore': 'FAISS'
     }
