@@ -46,7 +46,14 @@ Sektör trendlerini ve iş ilanlarını analiz ederek gerçekçi kariyer öneril
 👋 Merhaba! Bugün ne öğrenmek istersin? 🚀
 ```
 
-🔗 Canlı Demo Linki
+#### 🔗 Canlı Demo Linki
+
+https://betuloran-techpath-mentor-app-nyvkr2.streamlit.app/
+
+<img width="1469" height="795" alt="Screenshot 2025-10-22 at 23 17 14" src="https://github.com/user-attachments/assets/16fa6f65-907e-499e-b61f-f26c50862422" />
+p/
+
+<img width="1469" height="795" alt="Screenshot 2025-10-22 at 23 18 49" src="https://github.com/user-attachments/assets/81823b2c-b045-48d4-91c7-c2c9045c5f20" />
 
 
 ## 📊 Veri Seti Metodolojisi (Derleme ve Kaynaklandırma)
