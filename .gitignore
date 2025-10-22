@@ -14,9 +14,6 @@ chroma_db/
 # Streamlit
 .streamlit/
 
-# data set
-data/ 
-
 # OS
 .DS_Store
 Thumbs.db

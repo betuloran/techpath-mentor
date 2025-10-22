@@ -164,13 +164,17 @@ def load_custom_css():
 # ============================================================================
 @st.cache_resource
 def initialize_chatbot():
-    if not GEMINI_API_KEY:
-        st.error("❌ GEMINI_API_KEY .env dosyasında bulunmalıdır.")
+    # API key'i buradan al
+    from config import get_gemini_api_key
+    api_key = get_gemini_api_key()
+    
+    if not api_key:
+        st.error("❌ GEMINI_API_KEY .env dosyasında veya Streamlit Secrets'ta bulunmalıdır.")
         return None
     
-    os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
+    os.environ["GOOGLE_API_KEY"] = api_key
     
-    # Session için benzersiz ID oluştur
+    # Session için benzersiz ID oluştur (sadece ilk çağrıda)
     if 'session_id' not in st.session_state:
         import time
         st.session_state.session_id = f"session_{int(time.time())}"
