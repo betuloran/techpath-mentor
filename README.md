@@ -42,10 +42,41 @@ Veri seti, her biri JSON formatında tutulan 14 ana dosyadan oluşmaktadır.
 | **Veritabanı** | ChromaDB (In-Memory) | Vektörlerin hızlı erişim için bellekte depolanması. |
 | **Veri İşleme** | JQ Syntax | JSON dosyalarından sadece `icerik` alanını çekme. |
 
-### ⚙️ Proje Çalışma Kılavuzu
+## ⚙️ Proje Çalışma Kılavuzu
 
-## 1. Ortam Kurulumu
+1. Depoyu klonlayın:
 
-Proje, Anaconda/Miniforge gibi harici Python ortamlarından kaynaklanan çakışmaları önlemek için özel bir sanal ortamda (venv) çalıştırılmalıdır.
+```bash
+git clone https://github.com/betuloran/techpath-mentor.git
+cd techpath-mentor
+```
+
+2. Sanal bir ortam oluşturun ve etkinleştirin: 
+
+```bash
+ python -m venv venv
+ source venv/bin/activate  # Linux/Mac
+ venv\Scripts\activate     # Windows
+```
+
+3. Gerekli paketleri kurun:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Bir .env dosyası oluşturun ve Gemini API anahtarınızı ekleyin:
+
+```bash
+GEMİNİ_API_KEY=your_api_key
+```
+
+5. Uygulamayı çalıştırın:
+
+```bash
+streamlit run app.py
+```
+
+
 
 
