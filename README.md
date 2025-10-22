@@ -21,7 +21,7 @@ Sektör trendlerini ve iş ilanlarını analiz ederek gerçekçi kariyer öneril
 * **Kolay Kullanım:** Streamlit tabanlı web arayüzü ile hızlı ve etkileşimli bir sohbet deneyimi sunar.
 * **Kaynak Gösterimi:** Yanıtların hangi veri setlerine dayandığı gösterilerek güvenilirlik artırılır.
 
-## 🌐 Web Arayüzü & Deployment
+## 🌐 Web Arayüzü & Product Kılavuzu 
 
 #### 1. 💬 Örnek Kullanım Senaryosu: Web Geliştirme Sorgusu <br>
 
@@ -53,6 +53,29 @@ https://betuloran-techpath-mentor-app-nyvkr2.streamlit.app/
 <img width="1469" height="795" alt="Screenshot 2025-10-22 at 23 17 14" src="https://github.com/user-attachments/assets/16fa6f65-907e-499e-b61f-f26c50862422" />
 
 <img width="1469" height="795" alt="Screenshot 2025-10-22 at 23 18 49" src="https://github.com/user-attachments/assets/81823b2c-b045-48d4-91c7-c2c9045c5f20" />
+
+## ✨ Elde Edilen Sonuçlar
+
+#### 🚀 Teknik Başarılar
+
+- Düşük Halüsinasyon Oranı: RAG mimarisi sayesinde, sistem 157 dokümanla sınırlı olduğu için halüsinasyon riski minimal. Bilgi yoksa "Bu konuda veri setimde yeterli bilgi bulamadım" yanıtını veriyor.
+- Bağlamsal Tutarlılık: Her yanıt, birden fazla ilgili dokümanı birleştirerek tutarlı ve kapsamlı bilgi sunuyor.
+- Hızlı Erişim: FAISS vector search sayesinde, milyonlarca token içinden en alakalı bilgiyi milisaniyeler içinde buluyor.
+- Ölçeklenebilir Mimari: Yeni dokümanlar eklendikçe sistem otomatik olarak daha fazla konu hakkında bilgi sahibi oluyor.
+
+#### 📈 İyileştirme Potansiyeli
+Mevcut sonuçlar başarılı olsa da, sistemin daha da geliştirilmesi için şu alanları belirledi:
+##### Kısa Vadeli Hedefler:
+
+📚 Veri setini 300+ dokümana çıkararak kapsam genişletmek. <br>
+🔗 Yanıtlara kaynak linkleri ekleyerek doğrulanabilirliği artırmak.  <br>
+💬 Multi-turn conversation desteği ile daha derin diyaloglar sağlamak.  <br>
+
+##### Uzun Vadeli Vizyon:
+
+🎓 Kullanıcı feedback'leriyle sürekli öğrenen bir sistem.  <br>
+🌍 Çok dilli destek (İngilizce, Almanca).  <br>
+📊 Kişiselleştirilmiş kariyer önerileri (kullanıcı profili bazlı).  <br>
 
 
 ## 📊 Veri Seti Metodolojisi (Derleme ve Kaynaklandırma)
