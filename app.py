@@ -164,17 +164,35 @@ def load_custom_css():
 # ============================================================================
 @st.cache_resource
 def initialize_chatbot():
-    # API key'i buradan al
-    from config import get_gemini_api_key
-    api_key = get_gemini_api_key()
+    """
+    Chatbot'u başlatır - API key Streamlit secrets'tan veya .env'den alınır
+    """
+    # API key'i al
+    api_key = None
     
+    # Önce Streamlit secrets'tan dene
+    try:
+        if hasattr(st, 'secrets') and "GEMINI_API_KEY" in st.secrets:
+            api_key = st.secrets["GEMINI_API_KEY"]
+            print("✓ API key Streamlit secrets'tan alındı")
+    except Exception as e:
+        print(f"Secrets okuma hatası: {e}")
+    
+    # Yoksa .env'den al
+    if not api_key:
+        api_key = GEMINI_API_KEY
+        if api_key:
+            print("✓ API key .env'den alındı")
+    
+    # Hala yoksa hata ver
     if not api_key:
         st.error("❌ GEMINI_API_KEY .env dosyasında veya Streamlit Secrets'ta bulunmalıdır.")
         return None
     
+    # Google AI'ya key'i gönder
     os.environ["GOOGLE_API_KEY"] = api_key
     
-    # Session için benzersiz ID oluştur (sadece ilk çağrıda)
+    # Session ID oluştur
     if 'session_id' not in st.session_state:
         import time
         st.session_state.session_id = f"session_{int(time.time())}"
@@ -184,14 +202,15 @@ def initialize_chatbot():
             documents = load_documents()
             if not documents:
                 return None
-            # Session ID'yi pipeline'a gönder
             qa_chain = setup_rag_pipeline(documents, st.session_state.session_id)
         st.success("✅ Chatbot hazır! Sorularınızı sorabilirsiniz.")
         return qa_chain
     except Exception as e:
         st.error(f"❌ Hata: {e}")
+        import traceback
+        st.code(traceback.format_exc())
         return None
-
+    
 # ============================================================================
 # ANA UYGULAMA
 # ============================================================================
