@@ -1,0 +1,202 @@
+[
+  {
+    "id": "CYBER_001",
+    "konu": "Siber Güvenlik - Genel Bakış ve Kariyer Potansiyeli",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Genel_Bilgi",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Siber güvenlik, bilgisayar sistemlerini, ağları, programları ve verileri dijital saldırılardan koruma pratiğidir. Teknolojinin hayatımızın her alanına girmesiyle birlikte siber güvenlik uzmanlarına olan talep katlanarak artmıştır. ISC2 raporuna göre dünya çapında 3.4 milyon siber güvenlik uzmanı açığı var. Bu alan hem teknik beceriler hem de analitik düşünme gerektiren, sürekli öğrenmeyi zorunlu kılan dinamik bir kariyer yoludur. Siber güvenlik alanında birçok kariyer yolu vardır: Penetration Tester (etik hacker), SOC Analyst (tehdit izleme), Security Engineer (güvenlik altyapısı), Malware Analyst (kötü amaçlı yazılım analizi), Incident Response (olay müdahalesi), Cloud Security, AppSec gibi. Türkiye'de bankalar (Akbank, Garanti, İş Bankası), telekom şirketleri (Turkcell, Türk Telekom), kamu kurumları ve fintech'ler aktif olarak siber güvenlik uzmanları arıyor. Maaşlar junior seviyede 25-45K TL, senior seviyede 80-150K+ TL arasındadır. Bug bounty ile ek gelir imkanları var - bazı hackerlar yılda 100K+ dolar kazanıyor. Remote çalışma imkanları geniş. Alan sürekli değiştiği için lifelong learning şart.",
+    "tags": ["siber_güvenlik", "cybersecurity", "kariyer", "ethical_hacking", "security", "genel_bakış"]
+  },
+  {
+    "id": "CYBER_002",
+    "konu": "Penetration Tester (Ethical Hacker) - Rol ve Sorumluluklar",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Penetration Tester'lar sistemlerdeki güvenlik açıklarını bulmak için yasal olarak siber saldırılar gerçekleştirir. İyi hackerlar olarak bilinirler ve şirketlerin güvenlik zayıflıklarını tespit eder. Temel sorumluluklar: Web uygulamalarını test etme (SQL injection, XSS, CSRF), ağ güvenlik testleri yapma (port scanning, exploit), sosyal mühendislik testleri (phishing simulations), güvenlik açıklarını detaylı raporlama, red team operasyonları (gerçek saldırgan gibi davranma), müşterilere security briefing, exploit geliştirme, post-exploitation aktiviteleri (privilege escalation, lateral movement). Örneğin bir bankanın online banking sistemini test edebilir veya bir e-ticaret sitesinin ödeme sisteminde güvenlik açıkları arayabilir. Gereken beceriler: Ağ protokolleri (TCP/IP, HTTP, DNS, SMB), işletim sistemleri (Linux komut satırı, Windows internals, Active Directory), programlama (Python automation, Bash scripting, PowerShell), Metasploit (exploitation framework), Burp Suite (web app testing), Nmap (network scanning), OWASP Top 10 (web vulnerabilities), exploit teknikleri, raporlama becerileri. Sertifikalar: CEH (Certified Ethical Hacker - başlangıç), OSCP (Offensive Security Certified Professional - hands-on, saygın), PNPT (Practical Network Penetration Tester), eWPT (web pentesting). OSCP industry standard'dır ve 24 saatlik pratik sınavı vardır.",
+    "tags": ["penetration_testing", "ethical_hacking", "pentester", "OSCP", "CEH", "red_team", "exploit", "web_security"]
+  },
+  {
+    "id": "CYBER_003",
+    "konu": "SOC Analyst - Security Operations Center Rolleri",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "SOC (Security Operations Center) Analyst, kuruluşun güvenlik durumunu 7/24 izler, tehditleri tespit eder ve müdahale eder. Büyük şirketlerin SOC'ları vardiya sistemiyle çalışır. Temel sorumluluklar: SIEM araçlarını izleme (security alerts), security alert'lere yanıt verme (triage, investigation), log analizi yapma (firewall, IDS, endpoint logs), incident response (ilk müdahale), tehdit analizi (is it real or false positive?), security dashboard'ları yönetme, güvenlik olaylarını eskalasyon (Tier 2/3'e iletme), forensic analiz desteği. SOC seviyeleri: Tier 1 (Junior) alert triage ve ticket yönetimi - ilk bakış ve filtreleme; Tier 2 (Mid) derin analiz ve incident handling - investigation ve containment; Tier 3 (Senior) threat hunting ve advanced analysis - proaktif tehdit avcılığı. Gereken beceriler: SIEM platformları (Splunk en popüler, IBM QRadar, ArcSight), log analizi (regex, SPL - Splunk Processing Language), network traffic analizi (Wireshark, tcpdump), tehdit istihbaratı (IOC, TTP), IDS/IPS sistemleri (Snort, Suricata), malware analizi temelleri, scripting (Python, PowerShell - automation için). Sertifikalar: Security+ (CompTIA - temel sertifika), CySA+ (Cybersecurity Analyst), GCIH (Incident Handler), BTL1/BTL2 (Security Blue Team - SOC odaklı). SOC analyst entry-level pozisyon olarak ideal - 24/7 operasyon deneyimi.",
+    "tags": ["SOC", "security_analyst", "SIEM", "splunk", "threat_detection", "incident_response", "monitoring", "log_analysis"]
+  },
+  {
+    "id": "CYBER_004",
+    "konu": "Security Engineer, Architect ve Vulnerability Management",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Security Engineer / Architect organizasyonun güvenlik altyapısını tasarlar, uygular ve sürdürür. Sorumluluklar: Güvenlik mimarisi tasarlama (defense-in-depth), firewall ve IDS/IPS konfigürasyonu (Palo Alto, Cisco, Fortinet), VPN ve ağ segmentasyonu, zero trust mimarisi uygulama, security hardening (CIS benchmarks), cloud security yapılandırma (AWS GuardDuty, Azure Security Center), security policy oluşturma, vendor güvenlik değerlendirmeleri. Gereken beceriler: Network security, cloud security (AWS, Azure, GCP security services), firewall teknolojileri, IAM (Identity and Access Management), encryption ve PKI (Public Key Infrastructure), security frameworks (NIST Cybersecurity Framework, ISO 27001), Infrastructure as Code (Terraform, Ansible). Sertifikalar: CISSP (Certified Information Systems Security Professional - altın standart, 5 yıl deneyim gerekir), CCSP (Cloud Security Professional), CISM (Information Security Manager), AWS Certified Security Specialty. Vulnerability Management Analyst güvenlik açıklarını tespit eder ve düzeltme süreçlerini yönetir. Sorumluluklar: Vulnerability scanning (Nessus, Qualys, OpenVAS), risk değerlendirmesi (CVSS scoring), patch management, false positive triage, remediation takibi, compliance raporlama, vendor advisory takibi, asset management. CVE (Common Vulnerabilities and Exposures) sistemi ve CVSS (Common Vulnerability Scoring System) bilgisi kritik. Bu roller enterprise şirketlerde yüksek maaş bandındadır.",
+    "tags": ["security_engineer", "security_architect", "vulnerability_management", "CISSP", "firewall", "cloud_security", "zero_trust", "compliance"]
+  },
+  {
+    "id": "CYBER_005",
+    "konu": "Malware Analyst, Digital Forensics ve Incident Response",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Malware Analyst / Reverse Engineer kötü amaçlı yazılımları analiz eder ve davranışlarını inceler. Sorumluluklar: Malware sample analizi, static analysis (IDA Pro, Ghidra ile disassembly), dynamic analysis (sandbox'ta çalıştırma), reverse engineering (binary'i anlamak), IOC (Indicators of Compromise) çıkarma, malware family tanımlama (ransomware, trojan, worm), tehdit raporları yazma, signature oluşturma. Gereken beceriler: Assembly language (x86, x64), IDA Pro, Ghidra, x64dbg, Windows internals (API calls, registry, processes), file format analysis (PE, ELF), debugging. WannaCry, NotPetya gibi ransomware'leri analiz edebilirler. Sertifikalar: GREM (Reverse Engineering Malware), GCFA (Forensic Analyst). Digital Forensics Analyst dijital deliller üzerinde çalışır ve siber suçları araştırır. Sorumluluklar: Disk ve bellek forensics, network forensics, mobile forensics, chain of custody yönetimi (delil zinciri), forensic raporlama, yasal süreçler için delil toplama, timeline reconstruction. Gereken beceriler: Forensic araçları (EnCase, FTK, Autopsy - open source), file system analizi (NTFS, ext4, FAT32), memory analysis (Volatility framework), evidence handling, legal knowledge. Incident Response Specialist güvenlik olaylarına ilk müdahaleyi yapar. NIST incident response framework: Preparation, Detection, Containment, Eradication, Recovery, Lessons Learned. Crisis management becerileri kritik. Sertifikalar: GCIH, ECIH.",
+    "tags": ["malware_analysis", "reverse_engineering", "digital_forensics", "incident_response", "GREM", "IDA_Pro", "volatility", "ransomware"]
+  },
+  {
+    "id": "CYBER_006",
+    "konu": "AppSec, Threat Intelligence ve Cloud Security Uzmanları",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Application Security (AppSec) Engineer uygulama güvenliğinden sorumludur ve güvenli kod geliştirme süreçlerini yönetir. Sorumluluklar: Security-focused code review, SAST/DAST araçları yönetimi (SonarQube, Checkmarx, Veracode), secure coding training (OWASP Top 10), security champions programı, threat modeling (STRIDE, PASTA), developer'lara destek, security testing entegrasyonu (CI/CD pipeline'a), vulnerability remediation desteği. Gereken beceriler: Programlama dilleri (Java, Python, JavaScript, C#), OWASP Top 10, DevSecOps, container security, API security. Sertifikalar: CSSLP, GWAPT. Threat Intelligence Analyst siber tehdit istihbaratı toplar ve analiz eder. Sorumluluklar: Threat actor tracking (APT groups), IOC toplama ve analizi, threat reports oluşturma, intelligence sharing (ISAC, ISAO), TTP (Tactics, Techniques, Procedures) analizi - MITRE ATT&CK framework, strategic threat analysis, attribution analysis (hangi grup saldırdı?). OSINT (Open Source Intelligence) becerileri kritik. Threat intelligence platforms: MISP, ThreatConnect. Dark web monitoring. Sertifikalar: GCTI, CTIA. Cloud Security Engineer cloud ortamlarının güvenliğini sağlar. Sorumluluklar: Cloud security posture management (CSPM), IAM policy yönetimi, container security (Docker, Kubernetes), serverless security (Lambda), DevSecOps implementation, multi-cloud security. AWS security services: GuardDuty, Inspector, Security Hub. Kubernetes security (CKS certification). Sertifikalar: CCSP, AWS/Azure/GCP security certifications.",
+    "tags": ["appsec", "application_security", "threat_intelligence", "cloud_security", "DevSecOps", "OWASP", "kubernetes", "AWS_security"]
+  },
+  {
+    "id": "CYBER_007",
+    "konu": "GRC ve Security Awareness Rolleri",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Governance, Risk, and Compliance (GRC) Analyst güvenlik politikalarını, risk yönetimini ve uyumluluk süreçlerini yönetir. Sorumluluklar: Risk assessment ve yönetimi (risk register, heat maps), compliance audit'leri (ISO 27001, SOC 2, PCI-DSS), policy ve procedure oluşturma, vendor risk assessment (third-party risk), business continuity planning (BCP/DR), security awareness training koordinasyonu, regulatory compliance (GDPR - Avrupa, KVKK - Türkiye, PCI-DSS - ödeme kartları, HIPAA - sağlık), security metrics ve KPI'lar. Gereken beceriler: GRC platformları (Archer, ServiceNow GRC), risk frameworks (NIST, ISO 27001, CIS Controls, COBIT), compliance regulations bilgisi, business acumen (iş anlayışı), communication skills (yönetimle konuşma), project management. Sertifikalar: CRISC (Risk and Information Systems Control), CISA (Information Systems Auditor), ISO 27001 Lead Auditor, CGEIT. GRC analyst'ler genellikle teknik background'dan gelir ama management'e geçiş yapar. Security Awareness & Training Specialist çalışanların güvenlik farkındalığını artırır. Sorumluluklar: Security awareness programları tasarlama, phishing simulation campaigns (çalışanları test etme), training material geliştirme (videolar, posterler, e-learning), metrics ve reporting (click rates, completion rates), gamification strategies, culture building (security-first culture), executive briefings. İnsan faktörü data breach'lerin %82'sinde rol oynar. Social engineering bilgisi, instructional design, LMS (Learning Management Systems) kullanımı gerekir. KnowBe4 popüler awareness platformudur.",
+    "tags": ["GRC", "governance", "risk_management", "compliance", "ISO27001", "KVKK", "GDPR", "security_awareness", "CISA", "CRISC"]
+  },
+  {
+    "id": "CYBER_008",
+    "konu": "Network Security ve Web Application Security",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Uzmanlık_Alanları",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Network Security ağ trafiğini izleme, koruma ve güvenli ağ tasarımıdır. Teknolojiler: Firewall (Palo Alto Networks en gelişmiş next-gen firewall, Cisco ASA, Fortinet FortiGate), IDS/IPS (Intrusion Detection/Prevention - Snort open source, Suricata), Network Access Control (NAC - cihaz kontrolü), VPN (IPSec site-to-site, SSL VPN remote access), network segmentation (VLAN'lar, DMZ), Zero Trust Network Access (ZTNA - never trust, always verify). Deep packet inspection, network anomaly detection. Carrier-grade NAT, BGP security. Web Application Security web uygulamalarının güvenliğini test etme ve korumadır. OWASP Top 10 (2021): Broken Access Control, Cryptographic Failures, Injection (SQL injection, command injection), Insecure Design, Security Misconfiguration, Vulnerable Components, Authentication Failures, Software and Data Integrity Failures, Security Logging Failures, SSRF. SQL Injection örnek: SELECT * FROM users WHERE username='admin' AND password='pass' OR '1'='1' -- SQL injection ile authentication bypass. Cross-Site Scripting (XSS) kullanıcının browser'ında JavaScript çalıştırma. CSRF (Cross-Site Request Forgery) kullanıcının oturumunu kullanarak istek yapma. API security REST API güvenliği, rate limiting, OAuth 2.0. WAF (Web Application Firewall) Cloudflare, AWS WAF, ModSecurity. Araçlar: Burp Suite Professional industry standard web pentesting tool, OWASP ZAP free alternative, Nikto web server scanner, SQLMap automatic SQL injection tool, Acunetix commercial scanner.",
+    "tags": ["network_security", "web_security", "OWASP", "firewall", "IDS_IPS", "SQL_injection", "XSS", "burp_suite", "penetration_testing"]
+  },
+  {
+    "id": "CYBER_009",
+    "konu": "Mobile, Wireless, IoT ve OT Security",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Uzmanlık_Alanları",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Mobile Security mobil uygulama ve cihaz güvenliğidir. iOS security: App Store review process, sandboxing, code signing. Android security: APK analysis, permissions model, SafetyNet. Mobile app pentesting: insecure data storage, weak cryptography, insecure communication, authentication issues. Mobile malware banking trojan'ları özellikle Android'de yaygın. MDM (Mobile Device Management) kurumsal cihaz yönetimi. Araçlar: MobSF (Mobile Security Framework - automated scanning), Frida (dynamic instrumentation), Objection (Frida tabanlı), APKTool (Android APK reverse engineering). iOS için jailbreak, Android için root gerekebilir. Wireless Security kablosuz ağ güvenliğidir. WiFi security: WEP kırıldı (deprecated), WPA2 (4-way handshake, KRACK vulnerability), WPA3 (en güvenli, SAE). Bluetooth security: BlueBorne, BlueTooth Low Energy (BLE) attacks. Rogue access points sahte WiFi hotspot'lar (Starbucks WiFi gibi görünme). Evil twin attacks aynı SSID ile fake AP. Araçlar: Aircrack-ng suite (WiFi cracking), Wireshark (packet analysis), WiFi Pineapple (rogue AP device), Kismet (wireless network detector). IoT Security nesnelerin interneti cihazlarının güvenliğidir. Firmware analysis (binwalk ile extraction), hardware security (UART, JTAG interface'ler), communication protocols (MQTT, CoAP), embedded systems security. Mirai botnet IoT cihazları kullanarak DDoS saldırısı. Operational Technology (OT) Security endüstriyel kontrol sistemleri güvenliğidir. SCADA (Supervisory Control and Data Acquisition) systems, ICS (Industrial Control Systems), critical infrastructure protection (elektrik, su, petrol). Stuxnet Iran'ın nükleer tesislerine saldırdı. OT/IT convergence güvenlik challenges.",
+    "tags": ["mobile_security", "wireless_security", "IoT", "OT_security", "SCADA", "WiFi", "android", "iOS", "firmware", "ICS"]
+  },
+  {
+    "id": "CYBER_010",
+    "konu": "Penetration Testing Dağıtımları ve Temel Araçlar",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Araçlar_Teknolojiler",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Kali Linux en popüler penetration testing dağıtımıdır. Debian tabanlı, 600+ güvenlik aracı pre-installed, Offensive Security tarafından geliştirildi ve sürdürülüyor, düzenli güncellemeler (quarterly releases). Live USB veya VM olarak kullanılabilir. Default user kali, root privileges. Parrot OS Kali'ye alternatif, privacy odaklı, lightweight (daha az sistem kaynağı), anonimlik araçları dahil (Tor, AnonSurf). BlackArch Linux 2800+ araç içerir, Arch Linux tabanlı, ileri seviye kullanıcılar için. Network Scanning araçları: Nmap (Network Mapper) port scanning ve service detection - en önemli güvenlik aracı, kullanımı: nmap -sV -sC target.com (version detection, default scripts). Masscan en hızlı port scanner (saniyede milyonlarca paket). Netcat Swiss Army knife of networking - banner grabbing, port scanning, file transfer. hping3 custom packet crafting. Web Application Testing: Burp Suite proxy, scanner, intruder, repeater - intercepting proxy ile HTTP/HTTPS trafiği yakalama ve modifiye etme. Intruder brute force attacks. Professional version $399/yıl. OWASP ZAP (Zed Attack Proxy) free open source alternative Burp'e. SQLMap otomatik SQL injection tool - veritabanı dump, OS command execution. Nikto web server scanner - 6700+ potentially dangerous files/programs testi. Gobuster / Dirbuster directory ve file brute forcing - hidden endpoints bulma. ffuf modern, hızlı fuzzer. wfuzz parametreler, headers, POST data fuzzing.",
+    "tags": ["kali_linux", "penetration_testing", "nmap", "burp_suite", "SQLmap", "security_tools", "web_testing", "network_scanning"]
+  },
+  {
+    "id": "CYBER_011",
+    "konu": "Exploitation, Password Cracking ve Wireless Araçları",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Araçlar_Teknolojiler",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Exploitation araçları: Metasploit Framework en kapsamlı exploitation framework. Modules: exploit, payload, auxiliary, post. msfconsole komut satırı interface. Örnek kullanım: use exploit/windows/smb/ms17_010_eternalblue; set RHOST target_ip; exploit. Meterpreter interactive shell, çok güçlü post-exploitation. Cobalt Strike commercial tool (49 $/user/yıl), red team operations için, beacon payload, teamserver. Empire / PowerShell Empire fileless malware, PowerShell based, Windows post-exploitation. Password Cracking: John the Ripper fast password cracker, çeşitli hash formatları (MD5, SHA, NTLM). Wordlist mode veya brute force. Hashcat GPU-accelerated, daha hızlı (NVIDIA CUDA, AMD OpenCL). Mask attacks (combination attacks). Örnek: hashcat -m 1000 -a 0 hashes.txt rockyou.txt (NTLM hash cracking). Hydra network login brute forcer - SSH, FTP, HTTP, RDP, SMB vb. protokoller. CrackMapExec (CME) Active Directory pentesting tool - credential spraying, password spraying, SMB/LDAP enumeration. Wireless hacking: Aircrack-ng suite WiFi cracking araçları. airmon-ng (monitor mode), airodump-ng (packet capture), aircrack-ng (WPA/WPA2 cracking), aireplay-ng (deauth attack, packet injection). WPA handshake capture edip dictionary attack. Wireshark network protocol analyzer - packet inspection, pcap files, display filters. Bettercap modern network attack framework - MITM attacks, WiFi attacks, Bluetooth attacks. Ettercap MITM attacks (ARP spoofing). Rockyou.txt famous password wordlist (14 million passwords). SecLists wordlist collection.",
+    "tags": ["metasploit", "exploitation", "password_cracking", "hashcat", "john_the_ripper", "aircrack", "wireless_hacking", "brute_force"]
+  },
+  {
+    "id": "CYBER_012",
+    "konu": "Forensics, Malware Analysis ve SIEM Araçları",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Araçlar_Teknolojiler",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Forensics araçları: Autopsy open source digital forensics platform. Disk image analysis, file recovery, timeline analysis, keyword search. Sleuth Kit backend. Volatility Framework memory forensics tool. RAM dump analysis, process listing, network connections, registry hives. Plugins: pslist, netscan, filescan, malfind. Volatility 3 Python 3 destekli yeni versiyon. Sleuth Kit file system analysis tools. FTK (Forensic Toolkit) ve EnCase commercial forensics tools - law enforcement ve enterprise'da kullanılır. Wireshark network forensics için de kullanılır - pcap file analysis, protocol dissection, expert info. Malware Analysis: IDA Pro industry standard disassembler ve debugger. Commercial (expensive). Hex-Rays decompiler eklentisi C-like pseudocode üretir. Ghidra NSA tarafından geliştirilen free alternatif IDA'ya. Decompiler dahili. x64dbg / OllyDbg (32-bit) debugger'lar. Breakpoints, step through, register inspection. Process Hacker advanced process manager. ProcMon / ProcExp (Process Monitor/Explorer) Sysinternals tools - API calls, registry, file system monitoring. Any.run interactive malware sandbox - online, browser-based analysis. VirusTotal 70+ antivirus engine ile dosya/URL taraması. Hash lookup, behavior analysis. SIEM & Monitoring: Splunk en popüler SIEM. SPL (Splunk Processing Language) ile log query. Dashboards, alerts, correlation. Elastic Stack (ELK) Elasticsearch, Logstash, Kibana - open source SIEM alternative. IBM QRadar enterprise SIEM. ArcSight (Micro Focus). Wazuh open source XDR platform - HIDS, log analysis, vulnerability detection.",
+    "tags": ["forensics", "malware_analysis", "SIEM", "autopsy", "volatility", "IDA_Pro", "ghidra", "splunk", "ELK", "wireshark"]
+  },
+  {
+    "id": "CYBER_013",
+    "konu": "Vulnerability Scanning ve Cloud Security Araçları",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Araçlar_Teknolojiler",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Vulnerability Scanning: Nessus (Tenable) en yaygın vulnerability scanner. Commercial ama home version free (16 IP limit). Plugin-based, 100,000+ vulnerability checks. Qualys cloud-based vulnerability management platform. Web application scanning, compliance reporting. OpenVAS (Greenbone) open source vulnerability scanner. Nessus'un eski versiyonundan fork. Rapid7 InsightVM (Nexpose) vulnerability management ve orchestration. Cloud Security Tools: AWS security: GuardDuty (threat detection), Inspector (vulnerability assessment), Security Hub (centralized security view), Config (compliance monitoring), CloudTrail (API logging), IAM Access Analyzer. Azure security: Security Center (Azure Defender), Sentinel (cloud-native SIEM), Defender for Cloud, Policy (compliance), Key Vault (secrets management). GCP security: Security Command Center, Cloud Armor (DDoS protection), VPC Service Controls, Binary Authorization. Multi-Cloud CSPM: Prisma Cloud (Palo Alto Networks) comprehensive cloud security, CloudGuard (Check Point) cloud workload protection, Wiz agentless cloud security, Orca Security SideScanning technology. DevSecOps Tools: SAST (Static Application Security Testing): SonarQube code quality ve security, Checkmarx enterprise SAST, Fortify (Micro Focus), Semgrep open source. DAST (Dynamic): OWASP ZAP, Burp Suite, Acunetix. SCA (Software Composition Analysis): Snyk open source security, WhiteSource (Mend), Black Duck (Synopsys), Dependabot (GitHub). Container Security: Trivy comprehensive vulnerability scanner, Aqua Security container security platform, Twistlock (Palo Alto), Clair image vulnerability scanner, Anchore. IaC Security: Checkov Terraform/CloudFormation scanning, tfsec Terraform security scanner, Terraform-compliance BDD testing.",
+    "tags": ["vulnerability_scanning", "nessus", "cloud_security", "AWS_security", "azure_security", "DevSecOps", "container_security", "CSPM", "SAST", "DAST"]
+  },
+  {
+    "id": "CYBER_014",
+    "konu": "Siber Güvenlikte Programlama Dilleri - Python, Bash, PowerShell",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Programlama",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Python siber güvenlikte en çok kullanılan programlama dilidir. Kullanım alanları: Exploit geliştirme (custom exploits, proof-of-concept), automation scripts (tarama otomasyonu, log parsing), malware analizi (static/dynamic analysis), network programming (socket programming, packet crafting), web scraping (OSINT, recon), API etkileşimi (REST API testing). Önemli kütüphaneler: Scapy packet manipulation (custom packets oluşturma, sniffing), Requests HTTP istekleri (API testing), BeautifulSoup web scraping (HTML parsing), Paramiko SSH library (remote command execution), Pycryptodome cryptography (encryption/decryption), Impacket network protocols (SMB, LDAP, kerberos - Active Directory). Örnek: from scapy.all import *; packet = IP(dst=\"target.com\")/TCP(dport=80); send(packet). Bash Scripting Linux sistemlerde automation ve hızlı scriptler için kullanılır. System administration, log parsing (grep, awk, sed), automation (cron jobs), quick hacks (one-liners). Örnek: for ip in $(cat ips.txt); do nmap -sV $ip; done. PowerShell Windows ortamlarında essential. Windows penetration testing (Invoke-Mimikatz, PowerSploit), Active Directory enumeration (Get-ADUser, Get-ADComputer), malware analysis (process inspection), automation (registry manipulation, service management). Örnek: Get-ADUser -Filter * -Properties * | Select Name,Enabled. Empire/PowerShell Empire PowerShell-based post-exploitation framework. JavaScript web security için kritik. XSS exploitation (<script>alert(document.cookie)</script>), browser automation (Puppeteer, Selenium), web scraping, API testing. Node.js backend security testing.",
+    "tags": ["python", "programming", "bash", "powershell", "javascript", "scripting", "automation", "exploit_development", "scapy"]
+  },
+  {
+    "id": "CYBER_015",
+    "konu": "Go, C/C++ ve Siber Güvenlikte İleri Programlama",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Programlama",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Go (Golang) yüksek performanslı araç geliştirme için idealdir. Compiled language (binary executable), fast execution, concurrency support (goroutines), cross-platform compilation (Linux, Windows, Mac binary'leri). Kullanım alanları: Network tools (port scanner, proxy), malware development (modern malware'lar Go ile yazılıyor), cloud security tools (Kubernetes security), penetration testing tools. Nmap'in modern alternatifleri Go ile yazılmış (masscan, zgrab). Örnek projeler: GoScan, GoPhish (phishing framework). C/C++ low-level işlemler ve exploit development için kullanılır. Memory manipulation, pointer operations, buffer overflow exploitation, shellcode development, malware development (rootkits, keyloggers), reverse engineering (assembly'ye yakınlık). Buffer overflow örnek: strcpy(buffer, user_input) güvenli değil - gets() yerine fgets() kullanılmalı. Exploit development ASLR (Address Space Layout Randomization), DEP (Data Execution Prevention), stack canaries gibi protections bypass etmek gerekir. ROP (Return-Oriented Programming) modern exploitation tekniği. Assembly Language (x86, x64) reverse engineering ve exploit development için gerekli. Registers (EAX, EBX, ECX, EDX, ESI, EDI, ESP, EBP), instructions (MOV, PUSH, POP, CALL, RET, JMP, CMP), stack operations. IDA Pro ve Ghidra assembly okumak için kullanılır. Rust memory-safe language, C/C++ alternatifi. Buffer overflow gibi memory corruption bugs'ları önler. Security tooling için yükseliyor (RustScan port scanner). Ruby Metasploit Framework Ruby ile yazılmış. Exploit development için kullanılabilir. Perl legacy scripting, log parsing.",
+    "tags": ["golang", "C_programming", "assembly", "exploit_development", "buffer_overflow", "reverse_engineering", "malware", "shellcode", "rust"]
+  },
+  {
+    "id": "CYBER_016",
+    "konu": "Siber Güvenlik Sertifikaları - Başlangıç ve Orta Seviye",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Sertifikalar_Eğitim",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Başlangıç Seviyesi Sertifikaları: CompTIA Security+ temel güvenlik kavramlarını kapsar. Multiple choice sınav, 90 dakika, 750/900 geçme. Topics: threats, attacks, vulnerabilities, architecture, implementation, operations, governance. Entry-level için ideal, DoD 8570 requirement. Maliyet ~370$. CEH (Certified Ethical Hacker) EC-Council tarafından sunulur. Hacking temelleri, 125 soruluk sınav, 4 saat. Scan, enumerate, hack, report methodology. Eleştiriler: teorik ağırlıklı, pratik az. Maliyet ~1200$ (training + exam). eJPT (eLearnSecurity Junior Penetration Tester) hands-on pentesting sertifikası. 48 saat lab access, gerçek network'te pentesting. Beginner-friendly, uygun fiyat (~200$). PTS (Penetration Testing Student) course ile gelir. Orta Seviye Sertifikaları: OSCP (Offensive Security Certified Professional) industry'nin altın standardı. 24 saat hands-on exam (practical), 5 makine hack etme + documentation. PWK (Penetration Testing with Kali Linux) course 90 gün lab access. Zor ama saygın - Try Harder motto. Maliyet ~1500$. OSCP'den sonra iş bulmak çok kolay. CySA+ (CompTIA Cybersecurity Analyst) SOC analyst sertifikası. Threat detection, analysis, response. Security+ten sonraki adım. PNPT (Practical Network Penetration Tester) TCM Security tarafından. 5 günlük hands-on exam, Active Directory focus. External + Internal penetration testing, reporting. OSCP'ye alternatif, daha uygun fiyat (~400$). GCIH (GIAC Certified Incident Handler) incident response sertifikası. SANS training (pahalı ~8000$), 4 saatlik sınav. Pratik odaklı.",
+    "tags": ["certifications", "OSCP", "CEH", "Security_plus", "sertifikalar", "eğitim", "penetration_testing", "SOC", "hands_on"]
+  },
+  {
+    "id": "CYBER_017",
+    "konu": "İleri Seviye Sertifikalar ve Uzmanlık Alanları",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Sertifikalar_Eğitim",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "İleri Seviye Offensive Security Sertifikaları: OSEP (Offensive Security Experienced Penetration Tester) advanced evasion techniques, bypassing AV/EDR. OSED (Offensive Security Exploit Developer) exploit development, assembly, debuggers. OSWE (Offensive Security Web Expert) advanced web application attacks, whitebox testing. OSCE³ (Offensive Security Certified Expert) master level, üç sınav (OSEP + OSED + OSWE). CISSP (Certified Information Systems Security Professional) management level sertifika, geniş kapsam (8 domains). 5 yıl deneyim gerekir (veya 4 yıl + degree). 4 saatlik sınav, 125-175 soru. Maliyet ~700$. Executive/management pozizyonlar için. GXPN (GIAC Exploit Researcher and Advanced Penetration Tester) advanced penetration testing. Uzmanlık Sertifikaları: GREM (GIAC Reverse Engineering Malware) malware analysis ve reverse engineering. Windows internals, debugging, IDA Pro. GCFA (GIAC Certified Forensic Analyst) digital forensics. Disk, memory, network forensics. GCTI (GIAC Cyber Threat Intelligence) threat intelligence analysis. OSINT, threat actors, attribution. CCSP (Certified Cloud Security Professional) cloud security. ISC2 tarafından sunulur, 5 yıl IT experience gerekir. Cloud Security Alliance (CSA) domains. AWS/Azure/GCP Certified Security Specialty cloud provider specific. Hands-on lab'lar. CRISC (Certified in Risk and Information Systems Control) risk management ve GRC. CISA (Certified Information Systems Auditor) IT audit ve compliance. CISM (Certified Information Security Manager) security management. Sertifika Stratejisi: Security+ → OSCP → CISSP klasik yol. Specialization seç: web (OSWE, GWAPT), malware (GREM), forensics (GCFA), cloud (CCSP). SANS certifications pahalı ama kapsamlı ($8000+).",
+    "tags": ["advanced_certifications", "OSCP", "CISSP", "GREM", "GXPN", "malware", "forensics", "cloud_security", "SANS", "offensive_security"]
+  },
+  {
+    "id": "CYBER_018",
+    "konu": "Siber Güvenlik Öğrenme Yol Haritası",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Öğrenme_Kariyer",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Temel Seviye (0-6 ay): Bilgisayar ağları temelleri (TCP/IP model, OSI layers, routing, switching, subnetting), Linux komut satırı (Bash, file system, permissions, package management), Windows işletim sistemi (PowerShell, Active Directory basics, registry), Python programlama (syntax, functions, loops, file I/O, modules), temel güvenlik kavramları (CIA triad, authentication, encryption), Kali Linux kurulum ve kullanımı (VMware/VirtualBox). Başlangıç (6-12 ay): Network scanning (Nmap, banner grabbing, service enumeration), web application basics (HTTP, cookies, sessions, OWASP Top 10), Burp Suite kullanımı (proxy, repeater, intruder), Metasploit temelleri (msfconsole, exploits, payloads), CTF platformları (TryHackMe, HackTheBox easy boxes), Security+ sertifikası hazırlık. Günlük 2-3 saat çalışma. Orta Seviye (12-24 ay): Web pentesting derinlemesine (manual testing, bypass techniques), network pentesting (internal, external, pivoting), Active Directory saldırıları (Kerberoasting, Pass-the-Hash, Golden Ticket), privilege escalation teknikleri (Linux: SUID, sudo; Windows: UAC bypass, token manipulation), OSCP veya PNPT hazırlığı (PWK labs, Proving Grounds), bug bounty hunting (HackerOne, Bugcrowd başlangıç programları). İleri Seviye (24+ ay): Malware analysis (static, dynamic, reverse engineering), reverse engineering (IDA Pro, Ghidra, debuggers), exploit development (buffer overflow, ROP, heap exploitation), red team operations (phishing, C2 frameworks), cloud security (AWS, Azure, Kubernetes pentesting), advanced certifications (OSEP, OSED, GREM). Specialization seç ve derinleş.",
+    "tags": ["roadmap", "öğrenme", "yol_haritası", "cybersecurity_path", "başlangıç", "OSCP_prep", "CTF", "pentesting", "career_path"]
+  },
+  {
+    "id": "CYBER_019",
+    "konu": "Pratik Yapma Platformları - CTF ve Hands-On Labs",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Öğrenme_Kariyer",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Hands-On Lab Platformları: TryHackMe (THM) başlangıç dostu, guided learning paths (Complete Beginner, Offensive Pentesting, Web Fundamentals), AttackBox (browser-based Kali), gamification (badges, leaderboards). Free tier + Premium $10/ay. Advent of Cyber annual event. HackTheBox (HTB) daha zorlu, gerçekçi makineler (easy, medium, hard, insane), active community (forums, Discord), Pro Labs enterprise scenarios (Offshore, RastaLabs, Cybernetics - Active Directory environments). VIP $14/ay. OSCP preparation için ideal. HackTheBox Academy structured courses. PentesterLab web application focus, video tutorials, badges system (white, yellow, green, orange, red, black), exercises (basic to advanced). PortSwigger Web Security Academy web güvenliği için en iyi, ücretsiz, Burp Suite creators tarafından. Interactive labs, SQL injection, XSS, CSRF, authentication, access control. Offensive Security Proving Grounds (PG) OSCP benzeri makineler, Practice (easy-intermediate) ve Play (hard-very hard). Realistic scenarios, OSCP-style reporting. Bug Bounty Platformları: HackerOne en büyük platform (Netflix, PayPal, GitHub). Public programs (herkes katılabilir) ve private (invitation only). Triage team. Bugcrowd geniş program çeşitliliği, Crowdcontrol platform, University programı. Intigriti Avrupa odaklı, quality > quantity. YeşilSel (Türkiye) Türkiye merkezli platform, yerli kurumlar (bankalar, kamu). CTF Platformları: PicoCTF Carnegie Mellon University, başlangıç seviyesi, eğitsel. CTFTime CTF yarışmaları takvimi, team rankings, writeups. OverTheWire terminal tabanlı, Linux skills (Bandit, Natas, Leviathan). CryptoHack cryptography challenges. RingZer0 CTF çeşitli kategoriler. Pwnable.kr binary exploitation.",
+    "tags": ["TryHackMe", "HackTheBox", "CTF", "labs", "bug_bounty", "practice", "hands_on", "pentesting", "training"]
+  },
+  {
+    "id": "CYBER_020",
+    "konu": "Kariyer İpuçları, Maaşlar ve Önemli Kaynaklar",
+    "kategori": "Cyber_Security",
+    "alt_kategori": "Öğrenme_Kariyer",
+    "kaynak": "Siber Güvenlik Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Genel",
+    "icerik": "Kariyer İpuçları: Sürekli pratik yapın - günlük lab çalışması (1-2 saat), CTF'lere katılın (haftalık). Blog yazın - writeup'lar Medium/Dev.to'da paylaşın, GitHub'da dokümante edin. Networking - Twitter InfoSec community (#infosec, #bugbounty), Discord servers (TryHackMe, HackTheBox, Nahamsec), local meetups (OWASP chapters, BSides conferences), LinkedIn (OSCP, CEH tag'leri). Certifications - işverenlerin değer verdiği sertifikalar (Security+, OSCP, CISSP) ama hands-on skills önce. Specialization - bir alanda derinleş (web pentesting, malware analysis, cloud security). Legal & Ethical - daima yasal sınırlar içinde kal, permission almadan test yapma, responsible disclosure. Soft Skills - raporlama (executive summary, technical details, remediation), iletişim (findings'leri explain et), takım çalışması. Stay Updated - security news (The Hacker News, Krebs on Security, Bleeping Computer), blogs (PortSwigger, NahamSec), podcasts (Darknet Diaries, Malicious Life). Home Lab - VMware/VirtualBox ile virtual machines, Active Directory lab kur, güvenli ortamda test et. Maaş Beklentileri (Türkiye 2025): Junior (0-2 yıl) 25-45K TL, Mid-level (2-5 yıl) 45-80K TL, Senior (5+ yıl) 80-150K+ TL. Penetration Tester 40-120K TL (OSCP ile +%30). SOC Analyst 30-70K TL. Yurt Dışı: Junior 60-90K$, Mid 90-130K$, Senior 130-200K+$. Bug bounty ekstra gelir - critical vulnerability $10,000+, bazı hackerlar yılda 100K+ $ kazanıyor. Kaynaklar: YouTube (IppSec, John Hammond, LiveOverflow), Kitaplar (Web Application Hacker's Handbook, Penetration Testing), Türkçe (BGD, MDISec YouTube, Invictus Security podcast). Twitter takip: @thegrugq, @malwareunicorn, @NahamSec.",
+    "tags": ["kariyer", "maaş", "salary", "kaynaklar", "resources", "networking", "blog", "certifications", "bug_bounty", "türkiye"]
+  }
+]

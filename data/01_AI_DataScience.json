@@ -1,0 +1,164 @@
+[
+  {
+    "id": "AI_DS_001",
+    "konu": "Yapay Zeka ve Veri Bilimi - Genel Bakış",
+    "kategori": "Genel_Bilgi",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Yapay Zeka (AI) ve Veri Bilimi, günümüzün en hızlı büyüyen teknoloji alanlarından biridir. Bu alanda çalışan profesyoneller, büyük veri setlerini analiz eder, makine öğrenmesi modelleri geliştirir ve iş problemlerine veri odaklı çözümler üretir. Alan içinde çeşitli kariyer yolları bulunmaktadır: Veri Bilimci, Makine Öğrenmesi Mühendisi, Veri Analisti, Derin Öğrenme Mühendisi ve Veri Mühendisi gibi roller farklı beceriler gerektirir ve farklı sorumluluklar içerir. AI ve veri bilimi sağlık, finans, e-ticaret, enerji, otomotiv ve eğitim gibi neredeyse her sektörde kullanılmaktadır. Türkiye'de bankalar, fintech şirketleri, e-ticaret platformları ve teknoloji firmaları aktif olarak veri bilimciler arıyor. Programlama dilleri arasında Python en popüler olanıdır ve %80'den fazla veri bilimci tarafından kullanılır. R istatistiksel analiz için, SQL ise veri sorgulama için vazgeçilmezdir. Temel kütüphaneler NumPy, Pandas, Scikit-learn, TensorFlow ve PyTorch'u içerir. Bu alanda başarılı olmak için teknik becerilerin yanı sıra iş anlayışı, problem çözme ve iletişim becerileri de kritik önem taşır.",
+    "tags": ["AI", "veri_bilimi", "kariyer", "genel_bakış", "teknoloji"]
+  },
+  {
+    "id": "AI_DS_002",
+    "konu": "Veri Bilimci (Data Scientist) - Rol ve Sorumluluklar",
+    "kategori": "Kariyer_Rolleri",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Veri bilimciler, karmaşık veri setlerini analiz ederek iş içgörüleri üretir ve tahmin modelleri geliştirir. İstatistik, matematik ve programlama bilgisini birleştirerek çalışırlar. Temel sorumlulukları arasında veri toplama, temizleme ve analiz, makine öğrenmesi modelleri geliştirme, iş problemlerine veri odaklı çözümler üretme, veri görselleştirme ve raporlama, A/B testleri tasarlama ve analiz etme bulunur. Örneğin, bir e-ticaret şirketinde müşteri churn tahmini modeli geliştirebilir, bir bankada kredi risk skorlaması yapabilir veya bir sağlık kuruluşunda hastalık teşhis sistemleri oluşturabilir. Gereken beceriler: İstatistik ve olasılık teorisi (hipotez testleri, regresyon analizi), Python veya R programlama (Pandas, NumPy, Scikit-learn), SQL ve veri tabanı yönetimi (JOIN, GROUP BY, window functions), makine öğrenmesi algoritmaları (karar ağaçları, random forest, gradient boosting), veri görselleştirme araçları (Matplotlib, Tableau). Bu rol, hem teknik derinlik hem de iş anlayışı gerektiren multidisipliner bir pozisyondur. Veri bilimciler genellikle ürün yöneticileri, yazılım geliştiriciler ve iş analistleriyle yakın işbirliği içinde çalışır.",
+    "tags": ["veri_bilimci", "data_scientist", "kariyer", "python", "istatistik", "ML"]
+  },
+  {
+    "id": "AI_DS_003",
+    "konu": "Makine Öğrenmesi Mühendisi (ML Engineer) - Rol ve Sorumluluklar",
+    "kategori": "Kariyer_Rolleri",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "ML mühendisleri, makine öğrenmesi modellerini üretime hazır hale getiren, ölçeklenebilir sistemler geliştiren profesyonellerdir. Veri bilimcilerden daha çok yazılım geliştirme ve sistem tasarımı odaklıdırlar. Temel sorumlulukları: ML modellerini üretime alma (deployment), model performansını izleme ve iyileştirme, veri pipeline'ları oluşturma, model versiyonlama ve yönetimi, büyük ölçekli veri işleme sistemleri kurma, A/B testleri için altyapı geliştirme. Örneğin, bir öneri sistemini saniyede binlerce kullanıcıya hizmet verecek şekilde optimize edebilir, gerçek zamanlı fraud detection sistemi kurabilir veya milyonlarca görüntüyü işleyen bir computer vision pipeline'ı geliştirebilir. Gereken beceriler: Python, Java veya Scala ile yazılım geliştirme, deep learning framework'leri (TensorFlow, PyTorch) ile çalışma, cloud platformları (AWS SageMaker, GCP Vertex AI, Azure ML) kullanımı, MLOps araçları ve pratikleri (MLflow, Kubeflow, Airflow), dağıtık sistemler bilgisi (Kubernetes, Docker), REST API geliştirme, model monitoring ve logging. Bu rol, yazılım mühendisliği ile veri biliminin kesişim noktasındadır ve genellikle daha yüksek maaş bandındadır.",
+    "tags": ["ML_engineer", "makine_öğrenmesi", "deployment", "MLOps", "cloud", "production"]
+  },
+  {
+    "id": "AI_DS_004",
+    "konu": "Veri Analisti (Data Analyst) - Rol ve Sorumluluklar",
+    "kategori": "Kariyer_Rolleri",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Veri analistleri, işletme verilerini analiz ederek anlamlı içgörüler çıkarır ve karar vericilere raporlar sunar. Daha çok iş zekası (Business Intelligence) ve raporlama odaklıdırlar. ML mühendisleri veya veri bilimcilerden farklı olarak, tahmin modelleri geliştirmekten çok mevcut verileri analiz eder ve görselleştirirler. Temel sorumluluklar: İş metrikleri oluşturma ve takip etme (KPI'lar), dashboard ve raporlar hazırlama (günlük, haftalık, aylık), veri kalitesini kontrol etme ve tutarsızlıkları tespit etme, SQL sorguları yazarak veri çekme, trend analizi yapma ve içgörüler sunma, ad-hoc analiz talepleri için hızlı çözümler üretme. Örneğin, bir e-ticaret şirketinde ürün kategorilerine göre satış performansını analiz edebilir, müşteri segmentasyonu yapabilir veya kampanya etkinliğini ölçebilir. Gereken beceriler: SQL (temel seviye gerekli - SELECT, JOIN, GROUP BY, subqueries), Excel ve veri görselleştirme araçları (pivot tablolar, formüller), istatistik temelleri (ortalama, medyan, standart sapma, korelasyon), Tableau, Power BI, Looker gibi BI araçları, iş analizi becerileri ve domain bilgisi. Bu rol, veri bilimi kariyerine giriş için idealdir ve teknik becerilerle iş anlayışını dengeler. Birçok veri bilimci ve ML mühendisi kariyerine veri analisti olarak başlamıştır.",
+    "tags": ["veri_analisti", "data_analyst", "SQL", "BI", "tableau", "power_bi", "başlangıç"]
+  },
+  {
+    "id": "AI_DS_005",
+    "konu": "Derin Öğrenme ve Veri Mühendisliği Rolleri",
+    "kategori": "Kariyer_Rolleri",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Derin Öğrenme Mühendisleri özellikle yapay sinir ağları ve derin öğrenme modelleri üzerine çalışır. Genellikle görüntü işleme, doğal dil işleme veya ses tanıma gibi alanlarda uzmanlaşırlar. Sorumlulukları: Sinir ağı mimarileri tasarlama (CNN, RNN, Transformer), computer vision projeleri geliştirme (nesne tespiti, segmentasyon), NLP projeleri (sentiment analizi, chatbot'lar, makine çevirisi), model optimizasyonu ve hiper-parametre ayarlama (learning rate, batch size, optimizer seçimi), araştırma makalelerini takip etme ve state-of-the-art yöntemleri uygulama, GPU/TPU üzerinde büyük modeller eğitimi. Örneğin, otonom araçlar için sürüş sahnesini anlayan modeller veya medikal görüntülerde kanser tespiti yapan sistemler geliştirebilir. Gereken beceriler: Python ve deep learning framework'leri (PyTorch veya TensorFlow), matematik (lineer cebir, kalkülüs, optimizasyon teorisi), computer vision veya NLP bilgisi, araştırma metodolojisi ve literatür takibi, GPU programlama ve CUDA. Veri Mühendisleri ise veri altyapısını kurar ve veri bilimcilerin kullanacağı pipeline'ları oluşturur: ETL süreçleri oluşturma, veri ambarları (data warehouse) tasarlama, veri akış sistemleri kurma (real-time streaming), veri kalitesi ve tutarlılığını sağlama, büyük veri teknolojileri yönetimi (Spark, Kafka, Airflow). Gereken beceriler: SQL ve NoSQL veritabanları, Python/Java/Scala, Apache Spark ve Kafka, cloud veri servisleri, veri modelleme ve ETL tasarımı.",
+    "tags": ["deep_learning", "veri_mühendisi", "data_engineer", "ETL", "neural_networks", "NLP", "computer_vision"]
+  },
+  {
+    "id": "AI_DS_006",
+    "konu": "Python - AI ve Veri Biliminin Ana Dili",
+    "kategori": "Programlama_Dilleri",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Python, AI ve veri bilimi alanının en yaygın kullanılan dilidir. Stack Overflow anketlerine göre veri bilimcilerin %83'ü Python kullanıyor. Kolay öğrenilmesi, geniş kütüphane desteği ve topluluk gücü ile öne çıkar. Neden Python: Öğrenmesi kolay ve okunabilir sözdizimi (readable syntax), zengin kütüphane ekosistemi (NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch), güçlü topluluk desteği (Stack Overflow, GitHub, Reddit), hızlı prototipleme imkanı (REPL, Jupyter Notebook), endüstride yaygın kullanım (Google, Meta, Netflix, Spotify). Python, hem başlangıç seviyesi öğrenciler hem de ileri düzey araştırmacılar için uygundur. Basit bir kod örneği: import pandas as pd; df = pd.read_csv('data.csv'); print(df.describe()). Jupyter Notebook ile interaktif kodlama, veri analizi ve görselleştirme kolaylaştırılır - kod yazıp anında sonuç görebilirsiniz. Python'un popülaritesi, her türlü veri bilimi ve AI problemi için hazır çözümler, tutorial'lar ve örnek projeler bulunmasını sağlar. Türkiye'de iş ilanlarının %90'ında Python bilgisi aranıyor. Öğrenmesi 2-3 ay sürer, ustalaşması ise 1-2 yıl pratik gerektirir. Python ayrıca web development (Django, Flask), otomasyon ve scripting için de kullanılır, bu da onu çok yönlü bir yetenek haline getirir.",
+    "tags": ["python", "programlama", "başlangıç", "kütüphane", "jupyter", "pandas"]
+  },
+  {
+    "id": "AI_DS_007",
+    "konu": "R, SQL ve Julia - Alternatif Programlama Dilleri",
+    "kategori": "Programlama_Dilleri",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "R dili, istatistiksel analiz ve akademik araştırmalar için geliştirilmiştir. Özellikle istatistiksel modelleme (lineer regresyon, ANOVA, zaman serisi analizi), veri görselleştirme (ggplot2 kütüphanesi), akademik araştırmalar ve peer-reviewed makaleler, biyoinformatik (genomik veri analizi), ilaç araştırmaları ve klinik denemeler için güçlüdür. R, RStudio IDE ile kullanımı çok kolaydır. Akademik camiada Python'dan daha popülerdir. SQL (Structured Query Language) her veri profesyonelinin mutlaka bilmesi gereken veritabanı sorgulama dilidir. Veri bilimciler zamanlarının %40-50'sini SQL yazarak geçirir. Kullanım alanları: Veri sorgulama ve filtreleme (WHERE, HAVING), veri birleştirme (JOIN - INNER, LEFT, RIGHT, FULL), veri toplama ve gruplama (GROUP BY, agregasyon fonksiyonları), veri güncelleme ve yönetimi (INSERT, UPDATE, DELETE). Modern SQL, window functions, CTEs (Common Table Expressions) ve JSON desteği gibi gelişmiş özelliklere sahiptir. Julia ise bilimsel hesaplama için tasarlanmış, yüksek performanslı bir dildir. Python kadar kolay, C kadar hızlı olmayı hedefler. Yüksek performanslı hesaplama (HPC), sayısal analiz ve simülasyonlar, bilimsel modelleme (diferansiyel denklemler), finans modellemesi için idealdir. Julia henüz Python kadar yaygın değil ama akademik ve finans sektöründe kullanımı artıyor.",
+    "tags": ["R", "SQL", "Julia", "istatistik", "veritabanı", "bilimsel_hesaplama", "ggplot"]
+  },
+  {
+    "id": "AI_DS_008",
+    "konu": "Veri İşleme Kütüphaneleri - NumPy, Pandas, Polars",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "NumPy (Numerical Python) çok boyutlu diziler ve matris işlemleri, matematiksel fonksiyonlar (sin, cos, exp), lineer cebir işlemleri (matrix multiplication, inverse, eigenvalues) için kullanılır. Temel kullanım: import numpy as np; arr = np.array([1,2,3]); print(arr.mean()). Her veri bilimi projesinin temeli NumPy'dır çünkü diğer tüm kütüphaneler NumPy dizileri üzerine inşa edilmiştir. C dilinde yazıldığı için çok hızlıdır. Pandas veri manipülasyonu ve analizi için en popüler kütüphanedir. DataFrame yapısı ile tablo işlemleri (Excel benzeri), veri temizleme ve dönüştürme (missing values, duplicates), CSV/Excel/SQL okuma ve yazma (pd.read_csv, to_excel), group by ve pivot operasyonları sağlar. Temel kullanım: import pandas as pd; df = pd.read_csv('data.csv'); df.groupby('category').mean(). Pandas, veri analistleri ve veri bilimcilerin en çok kullandığı araçtır ve öğrenmesi 1-2 hafta sürer. Polars, Pandas'a alternatif, daha hızlı bir kütüphanedir. Rust dilinde yazılmıştır ve büyük veri setleri için optimize edilmiştir (>10GB). Lazy evaluation desteği sunar yani sorgular optimize edilerek çalıştırılır. Bazı operasyonlarda Pandas'tan 10-50x daha hızlıdır. Özellikle performans kritik uygulamalar veya büyük veri setleriyle çalışırken tercih edilir.",
+    "tags": ["numpy", "pandas", "polars", "veri_işleme", "dataframe", "kütüphane"]
+  },
+  {
+    "id": "AI_DS_009",
+    "konu": "Veri Görselleştirme Kütüphaneleri - Matplotlib, Seaborn, Plotly",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Matplotlib, Python'un temel çizim kütüphanesidir. Her türlü grafik oluşturma imkanı sunar: line plots, scatter plots, bar charts, histograms, heatmaps. Temel kullanım: import matplotlib.pyplot as plt; plt.plot([1,2,3], [4,5,6]); plt.show(). MATLAB'a benzer syntax'ı vardır. Seaborn, Matplotlib üzerine kuruludur ve istatistiksel grafikler için optimize edilmiştir. Daha güzel ve kolay görselleştirmeler sağlar, özellikle veri analizinde tercih edilir. Box plots, violin plots, pair plots, correlation heatmaps gibi istatistiksel grafikler bir satır kodla oluşturulabilir. Örnek: import seaborn as sns; sns.heatmap(df.corr(), annot=True). Seaborn'un default temaları Matplotlib'ten çok daha estetiktir. Plotly ise interaktif grafikler oluşturur. Web tabanlı görselleştirme (HTML output) ve dashboard'lar için idealdir. Kullanıcılar grafiklerle etkileşime girebilir: zoom, pan, hover bilgileri, filtreler. Plotly Dash ile web uygulamaları geliştirilebilir. İş sunumlarında ve raporlarda çok etkilidir çünkü stakeholder'lar grafikleri keşfedebilir. Görselleştirme, veri biliminin vazgeçilmez bir parçasıdır. İyi bir görselleştirme karmaşık bulguları anlaşılır hale getirir. Bulgularınızı etkili şekilde sunmak için bu araçlara hakim olmak gerekir. 'A picture is worth a thousand words' sözü veri biliminde çok geçerlidir.",
+    "tags": ["matplotlib", "seaborn", "plotly", "görselleştirme", "grafik", "visualization", "dashboard"]
+  },
+  {
+    "id": "AI_DS_010",
+    "konu": "Makine Öğrenmesi Kütüphaneleri - Scikit-learn ve Boosting",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Scikit-learn, en popüler ML kütüphanesidir ve her veri bilimcinin bilmesi gerekir. Klasik ML algoritmaları (regresyon: linear, ridge, lasso; sınıflandırma: logistic regression, SVM, naive bayes; kümeleme: k-means, DBSCAN, hierarchical), model değerlendirme araçları (cross-validation, confusion matrix, ROC curve, precision-recall), veri ön işleme (StandardScaler, MinMaxScaler, OneHotEncoder, train_test_split) sunar. Temel kullanım: from sklearn.ensemble import RandomForestClassifier; model = RandomForestClassifier(); model.fit(X_train, y_train); predictions = model.predict(X_test). API'si çok tutarlıdır, her modeli aynı şekilde kullanırsınız (fit, predict, score). XGBoost, LightGBM ve CatBoost gradient boosting algoritmalarıdır. Tablo verisi için en iyi performansı sağlarlar ve Kaggle yarışmalarında en çok kullanılan araçlardır (winning solutions'ların %70'i). XGBoost hız ve doğruluk dengesi sunar, en olgun ve yaygın olanıdır. LightGBM Microsoft tarafından geliştirilmiştir ve hız odaklıdır, büyük veri setlerinde çok hızlı çalışır. CatBoost Yandex tarafından geliştirilmiştir ve kategorik veriler için optimize edilmiştir, hiperparametre tuning gerektirmez. Bu araçlar, gerçek dünya problemlerinde sıklıkla en iyi sonuçları verir (fraud detection, credit scoring, churn prediction) ve profesyonel projelerde vazgeçilmezdir. Feature importance analizi için de mükemmeldirler.",
+    "tags": ["scikit-learn", "sklearn", "XGBoost", "LightGBM", "CatBoost", "ML", "makine_öğrenmesi", "boosting", "kaggle"]
+  },
+  {
+    "id": "AI_DS_011",
+    "konu": "Derin Öğrenme Framework'leri - TensorFlow, PyTorch, Keras",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "TensorFlow, Google tarafından geliştirilmiş, üretime hazır ve ölçeklenebilir bir framework'tür. Keras API ile kolay kullanım sağlar (Sequential ve Functional API). TensorFlow Lite (mobil uygulamalar - iOS, Android) ve TensorFlow.js (web tarayıcısında ML) desteği sunar. TensorBoard ile model eğitimini görselleştirebilirsiniz. Endüstride yaygın kullanılır özellikle production deployment için tercih edilir. Google, Airbnb, Uber TensorFlow kullanır. PyTorch, Meta (Facebook) tarafından geliştirilmiştir ve araştırma topluluğunun favorisidir. Dinamik hesaplama grafikleri (dynamic computational graphs) sayesinde debugging kolaylaşır. Daha Pythonic, esnek yapısı vardır ve kod yazmak Python yazmak gibidir. Akademik çalışmalarda ve yeni model geliştirmede tercih edilir - araştırma makalelerinin %75'i PyTorch kullanıyor. torchvision, torchaudio gibi domain-specific kütüphaneleri vardır. Keras, yüksek seviye API sunar ve TensorFlow'un üzerinde çalışır (TensorFlow 2.0+ ile entegre). Hızlı prototipleme için idealdir - birkaç satırda model oluşturabilirsiniz. Başlangıç seviyesi kullanıcılar için derin öğrenmeye giriş kapısıdır. Örnek: model = Sequential([Dense(64, activation='relu'), Dense(10, activation='softmax')]). Her üç araç da farklı senaryolar için güçlü çözümler sunar: TensorFlow production için, PyTorch research için, Keras öğrenme için en iyisidir.",
+    "tags": ["tensorflow", "pytorch", "keras", "deep_learning", "derin_öğrenme", "neural_networks", "google", "meta"]
+  },
+  {
+    "id": "AI_DS_012",
+    "konu": "Doğal Dil İşleme (NLP) Kütüphaneleri",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "NLTK (Natural Language Toolkit), metin işleme için temel kütüphanedir. Tokenizasyon (cümle ve kelime seviyesi), stemming ve lemmatization, POS tagging (part-of-speech), named entity recognition sağlar ve eğitim amaçlı kullanım için idealdir. Üniversitelerde NLP derslerinde yaygın kullanılır. spaCy ise hızlı ve endüstri standardıdır. Production-ready, C ile yazılmış core'u sayesinde NLTK'dan 10x daha hızlıdır. Entity recognition (kişi, yer, organizasyon), dependency parsing (cümle yapısı analizi) ve çok dilli destek (50+ dil) sunar. Production ortamları için tercih edilir. Transformers (Hugging Face), BERT, GPT, T5, BART gibi modern dil modellerini içerir. Hazır eğitilmiş modeller (pre-trained models) ve transfer learning için idealdir. Şu an en popüler NLP kütüphanesidir - GitHub'da 100K+ star. from transformers import pipeline; sentiment = pipeline('sentiment-analysis') gibi basit kullanım sunar. ChatGPT benzeri modeller (LLaMA, Falcon, Mistral) de Hugging Face'den indirilebilir. Gensim, topic modeling (LDA, LSA), Word2Vec ve Doc2Vec (kelime ve döküman embedding'leri), döküman benzerliği hesaplama için kullanılır. Akademik makalelerden tema çıkarma veya ürün incelemelerini gruplama gibi işlerde kullanışlıdır. NLP uygulamaları: chatbot'lar, metin sınıflandırma, duygu analizi, makine çevirisi, soru-cevap sistemleri, metin özetleme. Türkiye'de fintech, e-ticaret ve müşteri hizmetleri alanlarında NLP talebi artıyor.",
+    "tags": ["NLP", "NLTK", "spaCy", "transformers", "huggingface", "BERT", "GPT", "gensim", "sentiment_analysis"]
+  },
+  {
+    "id": "AI_DS_013",
+    "konu": "Computer Vision Kütüphaneleri - OpenCV ve Görüntü İşleme",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "OpenCV (Open Source Computer Vision Library), görüntü işleme ve computer vision için en yaygın kütüphanedir. 1999'dan beri geliştirilmektedir ve 2500+ optimize algoritma içerir. Gerçek zamanlı uygulamalar (webcam, video processing) ve geniş fonksiyon kütüphanesi (image filtering, edge detection, contour detection, object tracking) sunar. Yüz tanıma (face detection, recognition), nesne tespiti (Haar cascades, HOG), video işleme (frame extraction, motion detection), görüntü transformation (resize, rotate, crop) gibi birçok uygulama OpenCV ile geliştirilir. C++ ile yazılmıştır bu yüzden çok hızlıdır. Pillow (PIL - Python Imaging Library) temel görüntü işlemleri için kullanılır: görüntü okuma, yazma ve düzenleme (crop, resize, filter), format dönüşümleri (JPEG, PNG, GIF). Python'da görüntü yükleme için standart araçtır. from PIL import Image; img = Image.open('photo.jpg'). Basit image processing için yeterlidir. Albumentations, görüntü augmentasyonu ve veri artırma teknikleri sağlar (rotation, flipping, color jittering, cutout, mixup). Deep learning modellerinin eğitiminde veri çeşitliliğini artırmak için kritik öneme sahiptir. Özellikle sınırlı veri ile çalışırken overfitting'i önler. Computer vision kullanım alanları: otonom araçlar (Tesla, Waymo), tıbbi görüntüleme (röntgen, MRI analizi), güvenlik sistemleri (yüz tanıma), tarım (drone ile mahsul analizi), perakende (self-checkout), manufacturing (kalite kontrolü).",
+    "tags": ["computer_vision", "OpenCV", "pillow", "PIL", "albumentations", "görüntü_işleme", "augmentation", "yüz_tanıma"]
+  },
+  {
+    "id": "AI_DS_014",
+    "konu": "MLOps Araçları - MLflow, W&B, DVC, Docker, Kubernetes",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "MLflow, Databricks tarafından geliştirilen deney takibi, model versiyonlama ve model deployment sağlar. Farklı denemeleri karşılaştırmak (hangi hyperparameter daha iyi?), model yaşam döngüsünü yönetmek (training to production) ve reproduce edilebilir ML için kullanılır. MLflow Tracking (deneyler), MLflow Projects (reproducibility), MLflow Models (packaging) ve MLflow Registry (model management) bileşenlerinden oluşur. Weights & Biases (W&B), deney yönetimi ve izleme (real-time charts, loss curves), model performans karşılaştırma (table view, side-by-side) ve takım işbirliği (team workspace, reports) sunar. Özellikle deep learning projelerinde popülerdir. Slack ve email ile entegrasyon sağlar - model eğitimi bitince bildirim alırsınız. DVC (Data Version Control), veri ve model versiyonlama sağlar. Git benzeri workflow ile veri pipeline yönetimi yapar (dvc add, dvc push). Büyük dosyaları Git'e eklemeden track edebilirsiniz. S3, GCS gibi remote storage'larla entegre çalışır. Docker, konteynerizasyon ile tutarlı çalışma ortamları (dependencies, libraries hep aynı) ve kolay deployment (local'den cloud'a seamless geçiş) sunar. Dockerfile ile ortamınızı tanımlarsınız. Kubernetes ise konteyner orkestrasyon, ölçeklendirme (auto-scaling, load balancing) ve bulut deployment (AWS EKS, GCP GKE, Azure AKS) için kullanılır. Production'da binlerce container'ı yönetir. MLOps, ML modellerini production'a taşımak ve yönetmek (monitoring, retraining, A/B testing) için kritik öneme sahiptir. Modern ML mühendisleri bu araçlara hakim olmalıdır.",
+    "tags": ["MLOps", "MLflow", "wandb", "weights_and_biases", "DVC", "docker", "kubernetes", "deployment", "production", "versioning"]
+  },
+  {
+    "id": "AI_DS_015",
+    "konu": "Büyük Veri Araçları - Spark, Kafka, Hadoop",
+    "kategori": "Temel_Kütüphaneler",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Apache Spark, dağıtık veri işleme (distributed computing) için kullanılır. PySpark ile Python desteği ve büyük ölçekli veri analizi (100GB - petabyte seviyesi) sağlar. Terabayt seviyesindeki verilerle çalışmak için idealdir. In-memory processing sayesinde Hadoop MapReduce'dan 100x daha hızlıdır. Spark SQL (structured data), Spark Streaming (real-time), MLlib (machine learning), GraphX (graph processing) bileşenlerine sahiptir. Netflix, Uber, Airbnb günlük veri işleme için Spark kullanır. Apache Kafka, veri streaming ve gerçek zamanlı veri pipeline'ları (event streaming platform) için kullanılır. Event-driven mimariler kurmak için tercih edilir. Publish-subscribe modeli ile çalışır - producer'lar mesaj yayınlar, consumer'lar mesaj tüketir. Log işleme (application logs, system logs), gerçek zamanlı analitik (clickstream analysis), veri entegrasyonu (microservices arası iletişim) ve IoT data collection için yaygındır. LinkedIn, Netflix, Spotify günlük trilyonlarca event Kafka ile işler. Hadoop, dağıtık depolama (HDFS - Hadoop Distributed File System) ve MapReduce framework sağlar. Büyük veri ekosisteminin (big data ecosystem) temelidir. Artık Spark kadar popüler değil ama hala birçok kurumda kullanılıyor. Bu araçlar, büyük şirketlerde (FAANG, banks, e-commerce) ve büyük veri setleriyle çalışan projelerde yaygın kullanılır. Veri mühendisleri için temel becerilerdir. Türkiye'de özellikle bankalar (Garanti, İş Bankası, Akbank) ve telekom şirketleri bu teknolojileri kullanıyor.",
+    "tags": ["spark", "pyspark", "kafka", "hadoop", "büyük_veri", "big_data", "distributed", "streaming", "real_time"]
+  },
+  {
+    "id": "AI_DS_016",
+    "konu": "Öğrenme Yol Haritası - Başlangıç ve Orta Seviye",
+    "kategori": "Kariyer_Rehberi",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Başlangıç Seviyesi (0-6 ay): Python programlama temelleri (variables, loops, functions, OOP), temel matematik (lineer cebir - vectors, matrices; istatistik - mean, std, correlation; calculus - derivatives), NumPy ve Pandas (veri manipülasyonu, DataFrame işlemleri), veri görselleştirme (Matplotlib, Seaborn - line plots, scatter plots, histograms), SQL temelleri (SELECT, JOIN, GROUP BY, aggregations), basit ML projeleri (Scikit-learn ile linear regression, logistic regression, decision trees). Bu aşamada temel becerileri kazanmak ve küçük projeler yapmak önemlidir. Günde 2-3 saat çalışarak 6 ayda başlangıç seviyesini tamamlayabilirsiniz. Kaggle'da 'Titanic' ve 'House Prices' gibi başlangıç yarışmalarına katılın. Orta Seviye (6-12 ay): Makine öğrenmesi algoritmaları derinlemesine (ensemble methods, boosting, neural networks basics), feature engineering (feature selection, creation, transformation, encoding), model değerlendirme ve optimizasyon (cross-validation, hyperparameter tuning, GridSearchCV), Git ve versiyon kontrolü (commit, branch, merge, pull request), Jupyter Notebook ve veri analizi (exploratory data analysis, statistical tests), Kaggle yarışmalarına katılım (bronze/silver medal hedefi). Bu aşamada gerçek dünya problemleriyle çalışmak ve portfolio oluşturmak kritiktir. Kendi projelerinizi GitHub'a yükleyin - bu iş başvurularında çok önemli. Her aşamada düzenli pratik yapmak (consistency is key) ve projeler geliştirmek başarının anahtarıdır. Sadece kurs izlemek yetmez, mutlaka kod yazmalısınız.",
+    "tags": ["öğrenme", "yol_haritası", "roadmap", "başlangıç", "orta_seviye", "eğitim", "kariyer", "python", "SQL"]
+  },
+  {
+    "id": "AI_DS_017",
+    "konu": "Öğrenme Yol Haritası - İleri Seviye ve Kariyer İpuçları",
+    "kategori": "Kariyer_Rehberi",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "İleri Seviye (12+ ay): Deep learning (PyTorch veya TensorFlow - CNN, RNN, Transformers), NLP veya Computer Vision uzmanlaşması (bir alanda derinleşin), MLOps ve model deployment (Docker, Kubernetes, CI/CD), cloud platformları (AWS SageMaker, GCP Vertex AI, Azure ML), büyük veri araçları (Spark, Kafka - distributed computing), açık kaynak projelere katkı (GitHub'da contribution, bug fixes). Bu aşamada sektör deneyimi ve uzmanlaşma kritiktir. Kariyer İpuçları: 1) Portfolio oluşturun - GitHub'da en az 3-5 kaliteli proje (end-to-end ML projects), Kaggle'da yarışmalara katılın (medal kazanmak CV'de çok etkili). 2) Temel matematiği unutmayın - lineer cebir, istatistik ve olasılık teorisi, kalkülüs ve optimizasyon. İleri seviye ML için matematik şart. 3) İş problemlerine odaklanın - sadece model doğruluğu değil iş değeri (business impact) önemlidir. 'Bu model şirkete ne kazandırır?' sorusunu sorun. 4) Sürekli öğrenin - alan çok hızlı gelişiyor, yeni makaleler, araçlar sürekli çıkıyor. ArXiv, Medium, Twitter'ı takip edin. 5) Networking yapın - konferanslar (PyData, MLConf), meetup'lar, LinkedIn'de aktif olun. İş fırsatlarının %70'i network üzerinden gelir. 6) Domain bilgisi edinin - finans, sağlık veya e-ticaret gibi bir sektörde uzmanlaşın. Domain expertise + ML = yüksek değer. 7) İletişim becerilerini geliştirin - teknik olmayan kişilere bulgularınızı anlatabilmek çok önemli. Presentation skills, storytelling with data.",
+    "tags": ["ileri_seviye", "advanced", "kariyer_ipuçları", "career_tips", "network", "portfolio", "uzmanlaşma", "deep_learning"]
+  },
+  {
+    "id": "AI_DS_018",
+    "konu": "Maaş Beklentileri ve Öğrenme Kaynakları",
+    "kategori": "Kariyer_Rehberi",
+    "kaynak": "AI Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Genel",
+    "icerik": "Veri bilimi ve AI rolleri genellikle yüksek maaş bandında yer alır. Türkiye'de (2025 itibariyle) junior pozisyonlar 25-40K TL (veri analisti, junior data scientist), mid-level 40-80K TL (data scientist, ML engineer), senior pozisyonlar 80-150K+ TL (senior ML engineer, lead data scientist, principal DS) aralığındadır. Yurt dışında ise bu rakamlar çok daha yüksektir: ABD'de junior 80-120K$, mid-level 120-180K$, senior 180-300K$ arası. FAANG şirketlerinde (Google, Meta, Amazon) total compensation 400K$'a kadar çıkabilir. Remote çalışma fırsatları sayesinde Türkiye'den yurt dışı şirketlere çalışmak mümkün (dolar/euro maaş alabilirsiniz). Önerilen Kaynaklar - Online Kurslar: Coursera Machine Learning (Andrew Ng - klasik, herkesin alması gereken kurs), Fast.ai Practical Deep Learning (hands-on, hızlı öğrenme), Kaggle Learn (ücretsiz, interaktif), DeepLearning.AI Specializations. Kitaplar: Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Aurélien Géron - en iyi ML kitabı), Python Data Science Handbook (Jake VanderPlas - ücretsiz online), Deep Learning (Ian Goodfellow - akademik, detaylı), Introduction to Statistical Learning (ISLR - istatistik temelleri). Topluluklar: Kaggle (yarışmalar, datasets, notebooks), Reddit (r/MachineLearning, r/datascience - güncel tartışmalar), Stack Overflow (soru-cevap), GitHub (açık kaynak projeler), Twitter/X (ML researchers ve practitioners). Türkiye'de: İstanbul Data Science Academy, PyData Istanbul meetup'ları, AI Turkey topluluğu. Yapay zeka ve veri bilimi heyecan verici ve sürekli gelişen bir alandır. Merak, öğrenme isteği ve pratik yapma azmi ile bu alanda başarılı bir kariyer inşa edebilirsiniz!",
+    "tags": ["maaş", "salary", "kaynaklar", "resources", "kurslar", "courses", "kitaplar", "books", "topluluk", "community", "kariyer"]
+  }
+]

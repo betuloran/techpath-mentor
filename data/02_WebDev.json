@@ -1,0 +1,212 @@
+[
+  {
+    "id": "WEB_001",
+    "konu": "Web Geliştirme - Genel Bakış ve Kariyer Alanları",
+    "kategori": "Web_Development",
+    "alt_kategori": "Genel_Bilgi",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Web geliştirme, internet üzerinden erişilebilen uygulamalar, web siteleri ve hizmetler oluşturma sanatıdır. Frontend (ön yüz) kullanıcıların doğrudan etkileşimde bulunduğu görsel kısmı içerir - HTML, CSS, JavaScript kullanılarak geliştirilir. Backend (arka yüz) ise veritabanı, sunucu ve uygulama mantığını içerir - Python, Node.js, Java gibi diller kullanılır. Full-stack geliştiriciler ise her iki alanda da çalışabilir ve özellikle startup'larda çok değerlidir. Web geliştirme alanı son derece dinamiktir ve sürekli yeni teknolojiler çıkar. Türkiye'de e-ticaret (Trendyol, Hepsiburada), fintech (Papara, İyzico) ve SaaS şirketleri web geliştiricilere yoğun talep gösteriyor. Remote çalışma imkanları çok yaygındır - dünyanın her yerinden projeler alabilir ve yurt dışı şirketlere çalışabilirsiniz. Maaşlar junior seviyede 20-35K TL, senior seviyede 70-150K+ TL arasındadır. Öğrenmesi 6-12 ay sürer ve portfolio oluşturmak kritik öneme sahiptir.",
+    "tags": ["web_development", "frontend", "backend", "full_stack", "kariyer", "genel_bakış"]
+  },
+  {
+    "id": "WEB_002",
+    "konu": "Frontend Developer - Rol ve Sorumluluklar",
+    "kategori": "Web_Development",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Frontend geliştiriciler, kullanıcıların gördüğü ve etkileşimde bulunduğu arayüzleri oluşturur. Figma veya Adobe XD'deki tasarımları kodla hayata geçirir ve kullanıcı deneyimini optimize eder. Temel sorumluluklar: Web arayüzleri geliştirme (landing page'ler, dashboard'lar), responsive (duyarlı) tasarımlar oluşturma (mobil, tablet, desktop uyumluluğu), kullanıcı etkileşimlerini kodlama (button clicks, form validation), web performansını optimize etme (lazy loading, code splitting), tarayıcı uyumluluğunu sağlama (Chrome, Firefox, Safari), API'lerle frontend entegrasyonu (REST, GraphQL). Örneğin bir e-ticaret sitesinde ürün listesi, sepet sistemi ve checkout sayfalarını geliştirebilir. Gereken beceriler: HTML5, CSS3, JavaScript (ES6+) - web'in temel dilleri, modern framework'lerden biri (React en popüler %40 pazar payı, Vue öğrenmesi kolay, Angular enterprise için), CSS preprocessor'ları (Sass, Less) veya Tailwind CSS, responsive tasarım prensipleri (flexbox, grid), Git versiyon kontrolü, web performans optimizasyonu (Lighthouse scores), UI/UX tasarım prensipleri, RESTful API kullanımı (fetch, axios). Frontend geliştirici olmak için tasarım duygusu ve detaylara dikkat önemlidir.",
+    "tags": ["frontend", "developer", "react", "javascript", "HTML", "CSS", "UI_UX", "responsive_design"]
+  },
+  {
+    "id": "WEB_003",
+    "konu": "Backend Developer - Rol ve Sorumluluklar",
+    "kategori": "Web_Development",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Backend geliştiriciler, sunucu tarafı mantığını, veritabanı işlemlerini ve API'leri oluşturur. Uygulamanın beynidir ve kullanıcı görmez ama her işlem backend'de gerçekleşir. Temel sorumluluklar: RESTful veya GraphQL API'ler geliştirme (endpoints, request/response handling), veritabanı tasarlama ve yönetme (schema design, indexing, queries), sunucu tarafı mantık oluşturma (business logic, algorithms), güvenlik ve kimlik doğrulama sistemleri (JWT, OAuth, encryption), performans optimizasyonu ve ölçeklendirme (caching, load balancing), mikroservis mimarileri tasarlama (decoupled services), third-party entegrasyonlar (payment gateways, email services). Örneğin bir sosyal medya uygulamasında kullanıcı kayıt sistemi, post oluşturma/silme API'leri ve bildirim servisi geliştirebilir. Gereken beceriler: Bir backend dili (Node.js JavaScript bilen için kolay geçiş, Python Django/Flask çok popüler, Java Spring Boot enterprise standard, Go mikroservisler için hızlı), veritabanları (SQL: PostgreSQL en güçlü, MySQL yaygın; NoSQL: MongoDB esnek schema), API tasarımı ve geliştirme (REST principles, HTTP methods, status codes), sunucu yönetimi temel bilgisi (Linux commands, SSH), güvenlik en iyi pratikleri (SQL injection, XSS, CSRF koruması), Docker ve konteynerizasyon, cloud platformları (AWS, GCP, Azure), caching stratejileri (Redis, memcached). Backend development problem çözme ve sistem tasarımı becerileri gerektirir.",
+    "tags": ["backend", "developer", "API", "database", "nodejs", "python", "java", "security", "SQL"]
+  },
+  {
+    "id": "WEB_004",
+    "konu": "Full-Stack Developer, DevOps ve Mobile Developer Rolleri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Kariyer_Rolleri",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Full-Stack Developer hem frontend hem backend'de çalışabilir. Küçük ekiplerde veya startup'larda çok değerlidir çünkü tek kişi tüm stack'i yönetebilir. Sorumluluklar: End-to-end özellik geliştirme (UI'dan database'e kadar), tüm katmanları kapsayan problemleri çözme, frontend ve backend arasında köprü olma, teknik kararlar alma (hangi teknoloji stack kullanılacak). Gereken beceriler her iki alanın kombinasyonudur - MERN stack (MongoDB, Express, React, Node.js) veya PERN stack (PostgreSQL yerine) popülerdir. DevOps Engineer / SRE, geliştirme ve operasyonlar arasında köprü kurar. Sorumluluklar: CI/CD pipeline'ları oluşturma (GitHub Actions, Jenkins, GitLab CI), cloud altyapısı yönetimi (AWS EC2, S3, RDS), monitoring ve alerting sistemleri (Prometheus, Grafana, Datadog), otomatizasyon scriptleri yazma (Bash, Python), container ve orkestrasyon yönetimi (Docker, Kubernetes), güvenlik ve compliance. Gereken beceriler: Docker ve Kubernetes, cloud platformlar, Infrastructure as Code (Terraform, Ansible), scripting. Mobile Developer (React Native / Flutter) web teknolojilerini kullanarak mobil uygulamalar geliştirir. React Native JavaScript biliyorsanız öğrenmesi kolay, Flutter ise Dart dili kullanır ve performans odaklıdır. Cross-platform geliştirme tek kod ile iOS ve Android uygulaması yazmak demektir. Trendyol, Hepsiburada, N11 gibi Türk e-ticaret şirketleri React Native kullanıyor.",
+    "tags": ["full_stack", "devops", "mobile_developer", "react_native", "flutter", "CI_CD", "docker", "kubernetes", "MERN"]
+  },
+  {
+    "id": "WEB_005",
+    "konu": "HTML5, CSS3 ve JavaScript Temelleri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Frontend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "HTML5 (HyperText Markup Language) web sayfalarının iskelet yapısıdır. Semantik etiketler (header, nav, article, section, footer) SEO ve accessibility için önemlidir. Form elemanları ve validasyon (input types, required, pattern), multimedya desteği (video, audio tag'leri), Canvas ve SVG (grafik çizimi) içerir. HTML her web geliştiricinin bilmesi gereken temeldir. CSS3 (Cascading Style Sheets) sayfa stillemesi ve layout sağlar. Flexbox (tek boyutlu layout, items'ı hizalama) ve Grid sistemleri (iki boyutlu layout, complex designs), animasyonlar ve transitions (hover effects, smooth transitions), media queries (responsive tasarım için breakpoints), CSS Variables (Custom Properties, tema değişkenleri) içerir. Modern CSS ile JavaScript kullanmadan birçok etkileşimli öğe yapılabilir. JavaScript (ES6+) web'in programlama dilidir. Dinamik içerik ve etkileşimler (DOM manipulation, event handling), Async/Await ve Promises (asynchronous operations için), modern syntax (arrow functions, destructuring, spread operator, template literals), fetch API ile backend'e request atmak, localStorage ve sessionStorage kullanır. JavaScript her yerde - frontend (React, Vue), backend (Node.js), mobile (React Native), desktop (Electron) uygulamalarda kullanılır. Chrome DevTools ile debugging yapmak ve console.log ile hata ayıklamak önemli becerilerdir.",
+    "tags": ["HTML5", "CSS3", "javascript", "ES6", "flexbox", "grid", "DOM", "async_await", "frontend_basics"]
+  },
+  {
+    "id": "WEB_006",
+    "konu": "React - Modern Frontend Geliştirmenin Kalbi",
+    "kategori": "Web_Development",
+    "alt_kategori": "Frontend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "React, Meta (Facebook) tarafından geliştirilmiş, frontend'in en popüler kütüphanesidir. Dünya çapında %40 pazar payına sahip ve iş ilanlarının çoğunda aranır. Component-based mimari sayesinde yeniden kullanılabilir UI parçaları oluşturulur. Virtual DOM performans optimizasyonu sağlar - gerçek DOM'u sadece gerekli yerlerde günceller. JSX syntax HTML ve JavaScript'i birleştirir, component'ler daha okunabilir olur. React Hooks (useState, useEffect, useContext) fonksiyonel component'lerde state ve lifecycle yönetimi sağlar. Zengin ekosistem: React Router (routing, sayfalar arası geçiş), Redux veya Zustand (global state management, büyük uygulamalar için), React Query (server state management, data fetching ve caching), Formik veya React Hook Form (form yönetimi, validation), Material-UI, Ant Design, Chakra UI (hazır component kütüphaneleri). Next.js React framework'üdür ve server-side rendering (SSR) sağlar. SEO için kritik, daha hızlı initial page load. Static site generation (SSG) ve API routes da destekler. Vercel tarafından geliştirilir ve deployment çok kolay. File-based routing ve image optimization gibi özellikleri vardır. Netflix, Instagram, Airbnb, WhatsApp Web React kullanır. Türkiye'de Trendyol, N11, Getir React ile geliştirilmiştir. React öğrenmek 2-3 ay sürer, ustalaşmak 6-12 ay pratik gerektirir.",
+    "tags": ["react", "jsx", "hooks", "nextjs", "virtual_dom", "component", "redux", "frontend_framework"]
+  },
+  {
+    "id": "WEB_007",
+    "konu": "Vue.js, Angular ve Modern Frontend Alternatifleri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Frontend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Vue.js progressive framework'tür - kademeli benimsenebilir, yani mevcut projeye kolayca entegre edilebilir. Öğrenmesi React ve Angular'dan daha kolaydır ve documentation'ı çok iyi. Reactive data binding (veri değişince UI otomatik güncellenir), single-file components (.vue dosyaları - template, script, style bir arada), template syntax (HTML benzeri, directive'ler v-if, v-for), Vue Router ve Vuex (routing ve state management) içerir. Nuxt.js Vue için meta-framework'tür, Next.js'in Vue versiyonu gibidir. SSR ve SSG desteği sağlar. Alibaba, Xiaomi, GitLab Vue kullanır. Türkiye'de daha az yaygın ama küçük/orta projelerde tercih edilir. Angular, Google tarafından geliştirilmiş tam donanımlı framework'tür. TypeScript zorunludur (static typing, error prevention). Two-way data binding, dependency injection (modüler yapı, testable code), RxJS ile reactive programming (stream'ler, observables), Angular CLI (proje oluşturma, component generate, build) içerir. Büyük enterprise uygulamalar için ideal - bankalar (ING, Deutsche Bank), sigorta şirketleri Angular tercih eder. Öğrenmesi zor ama büyük projelerde çok güçlü. Svelte / SvelteKit derleme zamanında çalışan framework'tür. Virtual DOM yok, bu yüzden çok hızlı. Daha az kod yazılır, bundle size küçük. Yükselen popülerlik ama henüz yaygın değil. Her framework'ün avantajları var: React ekosistem ve iş imkanı, Vue öğrenme kolaylığı, Angular enterprise güvenilirlik, Svelte performans.",
+    "tags": ["vuejs", "angular", "svelte", "nuxtjs", "typescript", "reactive_programming", "frontend_framework"]
+  },
+  {
+    "id": "WEB_008",
+    "konu": "Tailwind CSS ve Modern Styling Yaklaşımları",
+    "kategori": "Web_Development",
+    "alt_kategori": "Frontend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Tailwind CSS utility-first CSS framework'üdür ve son yıllarda çok popüler oldu. Class name'ler utility (araç) odaklıdır: text-center, bg-blue-500, p-4 gibi. Hızlı prototipleme sağlar - CSS dosyası yazmadan direkt HTML'de styling. Özelleştirilebilir - tailwind.config.js ile tema, renkler, spacing değiştirilebilir. Production için optimize - kullanılmayan CSS'ler otomatik temizlenir (PurgeCSS). Component kütüphaneleri: Headless UI (unstyled components), DaisyUI (hazır styled components), Tailwind UI (ücretli, premium components). Vercel, GitHub, Shopify, Laravel Tailwind kullanır. Bootstrap klasik, popüler framework'tür. Hazır component'ler (navbar, modal, carousel), grid sistemi (12 column), responsive utilities içerir. Hızlı başlangıç ama özelleştirme zor, her site benzer görünebilir. Sass/SCSS CSS preprocessor'dır. Variables (renk, spacing değişkenleri), nesting (selector'ları iç içe yazma), mixins (reusable CSS blocks) içerir. Daha organize CSS yazmak için ideal. CSS Modules component bazlı scoped CSS sağlar. Class name'ler otomatik unique hale gelir, conflict olmaz. Styled Components / Emotion CSS-in-JS çözümleridir. Component-level styling, dynamic styling (props'a göre stil değişimi), JavaScript içinde CSS yazmak. React projelerinde popüler. Her yaklaşımın kullanım alanı var - Tailwind hız için, Sass organizasyon için, CSS-in-JS component isolation için tercih edilir.",
+    "tags": ["tailwind", "CSS", "bootstrap", "sass", "scss", "styled_components", "CSS_modules", "styling"]
+  },
+  {
+    "id": "WEB_009",
+    "konu": "Build Araçları - Vite, Webpack ve Modern Tooling",
+    "kategori": "Web_Development",
+    "alt_kategori": "Frontend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Vite modern build tool'dur ve son derece hızlıdır. Dev server anında başlar (cold start ~200ms), hot module replacement (HMR) değişiklikleri anında yansıtır, framework agnostic (React, Vue, Svelte hepsiyle çalışır). Evan You (Vue.js creator) tarafından geliştirildi. Rollup tabanlı production build. Yeni projelerde Vite tercih edilmeli. Webpack güçlü module bundler'dır ama kompleks yapılandırma gerektirir. Plugin sistemi çok zengin - her şey yapılabilir. Code splitting, lazy loading, asset optimization sağlar. Eski projelerde hala yaygın. Next.js ve Create React App (CRA) Webpack kullanır. Parcel zero-config bundler'dır - yapılandırma dosyası gerekmez. Otomatik optimizasyon, kolay kullanım. Küçük projeler için ideal. npm (Node Package Manager) en yaygın paket yöneticisidir. Yarn Facebook tarafından geliştirildi, daha hızlı ve deterministic (lockfile ile aynı versiyonlar). pnpm disk alanı tasarrufu sağlar - packages'ı share eder, çok daha hızlı. Monorepo'larda tercih edilir. TypeScript JavaScript'in type-safe versiyonudur. Static type checking hata yakalamada avantaj sağlar, better IDE support (autocomplete, refactoring), büyük projelerde kritik öneme sahiptir. interface, type, generic'ler kod kalitesini artırır. Tüm modern framework'ler TypeScript destekler. React + TypeScript kombinasyonu çok popüler. Öğrenmesi 1-2 hafta sürer ama uzun vadede zaman kazandırır.",
+    "tags": ["vite", "webpack", "build_tools", "npm", "yarn", "pnpm", "typescript", "bundler", "tooling"]
+  },
+  {
+    "id": "WEB_010",
+    "konu": "Node.js ve Express.js - Backend'in Temelleri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Backend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Node.js JavaScript'i backend'de çalıştırır - Chrome V8 engine kullanır. Non-blocking I/O event-driven architecture sayesinde yüksek concurrency sağlar. Single-threaded ama async operations ile binlerce eş zamanlı istek handle eder. npm ekosistemi 2 milyondan fazla paket içerir. Real-time uygulamalar (chat, gaming), API'ler, microservices için ideal. Netflix, LinkedIn, Uber, PayPal Node.js kullanır. Express.js en popüler Node.js framework'üdür - minimalist ve esnektir. Middleware sistemi request/response pipeline'ını yönetir. Routing (app.get, app.post), static file serving, error handling sağlar. RESTful API'ler için ideal başlangıç. Örnek kod: const express = require('express'); const app = express(); app.get('/api/users', (req, res) => res.json(users)); app.listen(3000). Nest.js TypeScript-first framework'tür, Angular'dan esinlenmiştir. Modüler mimari (controllers, services, modules), dependency injection, decorators kullanır. Enterprise-ready, büyük projelerde tercih edilir. Testing ve documentation dahili. Fastify performans odaklıdır - Express'ten 2-3x daha hızlı. Schema-based validation (JSON Schema), plugin architecture. Mikroservisler için ideal. Koa.js Express'in yaratıcılarından Evan You tarafından geliştirildi. Modern, minimal yapı. Async/await native desteği, middleware composition. Express'e alternatif ama daha az yaygın. Node.js öğrenmek JavaScript biliyorsanız kolay - 1-2 ay sürer.",
+    "tags": ["nodejs", "expressjs", "nestjs", "backend", "API", "javascript", "server_side", "middleware", "fastify"]
+  },
+  {
+    "id": "WEB_011",
+    "konu": "Python Backend - Django, Flask ve FastAPI",
+    "kategori": "Web_Development",
+    "alt_kategori": "Backend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Django batteries-included framework'tür - her şey dahil. ORM (Object-Relational Mapping) database queries'i Python kodu ile yapma, admin panel otomatik oluşturulur (CRUD operations), authentication ve permissions dahili, güvenli defaults (CSRF, SQL injection protection), hızlı geliştirme sağlar. Instagram, Pinterest, Mozilla, NASA Django kullanır. MTV pattern (Model-Template-View - MVC benzeri). Django REST Framework (DRF) RESTful API'ler için en güçlü araçtır. Serializers veri dönüşümü, browsable API (tarayıcıda test), authentication/permissions (token, JWT, OAuth). Flask mikro framework'tür - minimalist ve esnektir. Extensions ile genişletilebilir (Flask-SQLAlchemy, Flask-Login, Flask-RESTful). Mikroservisler için uygun, öğrenmesi kolay. Airbnb, Reddit, Netflix bazı servislerde Flask kullanır. FastAPI modern, hızlı framework'tür. Async support (high concurrency), automatic API documentation (Swagger UI otomatik oluşur), type hints kullanır (Pydantic ile validation), dependency injection, WebSocket support. Yükselen popülerlik - Uber, Microsoft bazı projelerde FastAPI'ye geçiyor. Performance Node.js ile rekabet eder. Python backend Django enterprise için, Flask esneklik için, FastAPI modern ve hız için tercih edilir. Python öğrenmesi kolay ama web framework'leri 2-3 ay sürer. Türkiye'de startup'lar Python + React stack'i sıkça kullanır.",
+    "tags": ["python", "django", "flask", "fastapi", "backend", "ORM", "REST_API", "async", "framework"]
+  },
+  {
+    "id": "WEB_012",
+    "konu": "Java Spring Boot ve Diğer Enterprise Backend Dilleri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Backend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Spring Boot Java'nın enterprise standard framework'üdür. Dependency injection (loosely coupled code), geniş ekosistem (Spring Cloud, Spring Security, Spring Data), production-ready features (health checks, metrics), microservices stack içerir. Bankalar ve büyük kurumlarda çok popüler - Türkiye'de Akbank, Garanti, İş Bankası Spring Boot kullanır. Convention over configuration - minimal setup ile başlanır. Spring Initializr ile proje oluşturma çok kolay. Learning curve yüksektir ama career prospects mükemmel. PHP hala yaygın kullanılır özellikle CMS ve e-ticaret'te. Laravel elegant syntax ve zengin özelliklere sahiptir. Eloquent ORM, Blade templating, Artisan CLI, queue/cache/authentication dahili. WordPress, WooCommerce PHP ile yazılmıştır. Symfony enterprise-grade, modüler yapı. Drupal, PrestaShop Symfony kullanır. Go (Golang) yüksek performans ve concurrency için idealdir. Compiled language, goroutines (lightweight threads), mikroservisler için mükemmel. Gin, Fiber popüler framework'lerdir. Docker, Kubernetes Go ile yazılmıştır. Ruby on Rails convention over configuration felsefesi. Hızlı prototipleme, Active Record ORM, scaffold özelliği. Startup'larda popülerdi (Airbnb, GitHub, Shopify başlangıçta Rails kullandı) ama popülaritesi azaldı. ASP.NET Core Microsoft'un cross-platform framework'üdür. Yüksek performans, Entity Framework ORM, MVC pattern. Azure ile mükemmel entegrasyon. Enterprise şirketlerde yaygın. Her dilin kullanım alanı var: Java enterprise, Python/Node.js startup, Go performance-critical, PHP CMS için ideal.",
+    "tags": ["java", "spring_boot", "PHP", "laravel", "golang", "ruby_on_rails", "asp_net", "enterprise", "backend"]
+  },
+  {
+    "id": "WEB_013",
+    "konu": "Veritabanları - SQL ve NoSQL Karşılaştırması",
+    "kategori": "Web_Development",
+    "alt_kategori": "Backend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "PostgreSQL açık kaynak, en güçlü ilişkisel veritabanıdır. ACID uyumlu (Atomicity, Consistency, Isolation, Durability), JSON desteği (NoSQL özellikleri de var), advanced queries (window functions, CTEs, full-text search), güvenilir ve feature-rich. Startups ve enterprise'da en çok tercih edilen. Heroku, Instagram, Reddit PostgreSQL kullanır. MySQL / MariaDB popüler, yaygın kullanılan SQL veritabanlarıdır. Kolay kurulum, web uygulamaları için ideal. WordPress, Joomla, phpMyAdmin MySQL kullanır. MariaDB MySQL'in fork'u - daha açık kaynak odaklı. SQLite dosya tabanlı, embedded database'dir. Serverless, zero-config. Mobil uygulamalar ve küçük projeler için. Microsoft SQL Server enterprise çözümü, .NET ile mükemmel entegrasyon, güçlü araçlar (SQL Server Management Studio). Büyük şirketlerde yaygın. MongoDB en popüler NoSQL veritabanıdır. Document-based (JSON-like BSON format), esnek schema (structure önceden belirlenmez), hızlı geliştirme, horizontal scaling kolay. Startups çok kullanır. MEAN/MERN stack'in M'si MongoDB. Redis in-memory data store'dur. Cache için ideal (session storage, API response caching), pub/sub messaging, çok hızlı (microsecond latency). Her büyük uygulama Redis kullanır. Cassandra wide-column store, yüksek ölçeklenebilirlik, distributed architecture. Netflix, Apple, Instagram mesaj sistemlerinde kullanır. Elasticsearch search engine, full-text search, log analizi, real-time indexing. E-ticaret sitelerinde ürün arama için kullanılır.",
+    "tags": ["database", "postgresql", "mysql", "mongodb", "redis", "SQL", "NoSQL", "elasticsearch", "cassandra"]
+  },
+  {
+    "id": "WEB_014",
+    "konu": "API Teknolojileri - REST, GraphQL, gRPC",
+    "kategori": "Web_Development",
+    "alt_kategori": "Backend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "REST (REpresentational State Transfer) en yaygın API mimarisidir. HTTP metodları (GET data çekme, POST data oluşturma, PUT/PATCH güncelleme, DELETE silme), stateless (her request bağımsız), JSON format (lightweight data exchange), endpoint-based (her kaynak için URL). Örnek: GET /api/users/123, POST /api/posts. Best practices: versioning (/api/v1/), proper status codes (200 OK, 201 Created, 404 Not Found, 500 Server Error), pagination, filtering. GraphQL Facebook tarafından geliştirildi. Tek endpoint (genellikle /graphql), istemci veri şeklini belirler (query ile istediğiniz field'ları seçersiniz), over-fetching/under-fetching problemi çözer (REST'te gereksiz data gelebilir veya eksik kalabilir), type system (schema ile data structure tanımlı), real-time (subscriptions ile WebSocket). GitHub, Shopify, Twitter API'lerinde GraphQL var. Apollo Client ve Server popüler araçlardır. gRPC Google tarafından geliştirildi. Protocol Buffers kullanır (binary format, JSON'dan küçük ve hızlı), streaming desteği (client/server/bidirectional), mikroservisler arası iletişim için ideal. HTTP/2 tabanlı. Google, Netflix mikroservislerde gRPC kullanır. WebSocket real-time, iki yönlü iletişim sağlar. Chat uygulamaları (WhatsApp, Slack), live updates (canlı skor, borsa), multiplayer gaming için kullanılır. Socket.io popüler WebSocket kütüphanesidir. REST basit projeler için, GraphQL complex data requirements için, gRPC mikroservisler için, WebSocket real-time için ideal seçimdir.",
+    "tags": ["REST", "API", "GraphQL", "gRPC", "websocket", "HTTP", "microservices", "real_time", "protocol_buffers"]
+  },
+  {
+    "id": "WEB_015",
+    "konu": "Authentication, Authorization ve API Security",
+    "kategori": "Web_Development",
+    "alt_kategori": "Backend_Teknolojiler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "JWT (JSON Web Tokens) stateless authentication sağlar. Token içinde user bilgileri (claims), server session tutmaz (scalable), Header.Payload.Signature formatı, expiration time ayarlanır. Access token (kısa ömürlü, 15-60 dk) ve refresh token (uzun ömürlü, 7-30 gün) birlikte kullanılır. HTTPS ile gönderilmeli. OAuth 2.0 yetkilendirme protokolüdür. Third-party login (Google, Facebook, GitHub ile giriş), scoped access (sadece gerekli permissions), authorization code flow güvenlidir. Auth0, Firebase Auth OAuth implementasyonları sağlar. Passport.js Node.js için authentication middleware'dir. 500+ strategy (local, Google, Facebook, JWT vb.) destekler. Modüler yapı. Session-based Authentication geleneksel yaklaşımdır. Server-side session (sunucuda user data tutulur), cookies (session ID browser'da), stateful (session store gerektirir - Redis). Security Best Practices: Password hashing (bcrypt, argon2 kullanarak şifreleme), SQL injection prevention (prepared statements, ORM), XSS protection (input sanitization, escape output), CSRF tokens (cross-site request forgery koruması), rate limiting (brute force saldırı önleme), HTTPS enforcement (man-in-the-middle attack prevention), input validation (her input kontrol edilmeli), CORS configuration (hangi origin'lere izin verileceği). OWASP Top 10 her backend developer'ın bilmesi gereken güvenlik açıklarıdır. API documentation Swagger/OpenAPI ile yapılır. Interactive testing, code generation, otomatik dokümantasyon. Postman API testing ve collaboration için kullanılır.",
+    "tags": ["authentication", "authorization", "JWT", "OAuth", "security", "password", "API_security", "OWASP", "HTTPS"]
+  },
+  {
+    "id": "WEB_016",
+    "konu": "Modern Web Mimarileri ve Rendering Stratejileri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Modern_Konseptler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "Monolithic Architecture tek uygulama içinde her şey vardır. Kolay başlangıç, basit deployment, tightly coupled (bir değişiklik her yere etki eder). Küçük/orta projeler için uygun. Microservices Architecture bağımsız servisler içerir. Her servis kendi database'i, technology diversity (her servis farklı dil kullanabilir), independent scaling ve deployment, kompleks management. API Gateway servisler arası iletişimi yönetir. Netflix, Uber, Amazon mikroservisler kullanır. Serverless / FaaS (Function as a Service) event-driven fonksiyonlardır. AWS Lambda, Cloudflare Workers, Vercel Functions. Otomatik scaling, pay-per-use (sadece kullanıldığında ödeme), infrastructure yönetimi yok. Cold start problemi var. JAMstack (JavaScript, APIs, Markup) static site generation odaklıdır. CDN distribution (çok hızlı), decoupled architecture (frontend/backend ayrı), güvenlik avantajları. Rendering Stratejileri: Client-Side Rendering (CSR) React/Vue/Angular default davranışı. JavaScript browser'da çalışır, SEO challenges (Google bot beklemek zorunda), yavaş ilk yükleme (JavaScript indirilmeli). Server-Side Rendering (SSR) her istek için server'da render edilir. Better SEO (HTML gelir), faster first paint, Next.js ve Nuxt.js destekler. Static Site Generation (SSG) build time'da render edilir. En hızlı yöntem, Gatsby, Next.js, Hugo. Blog, documentation için ideal. Incremental Static Regeneration (ISR) SSG ile dinamik güncelleme kombinasyonu. Next.js özelliği, belirli interval'lerde sayfalar rebuild edilir.",
+    "tags": ["microservices", "monolithic", "serverless", "jamstack", "SSR", "SSG", "CSR", "ISR", "architecture", "rendering"]
+  },
+  {
+    "id": "WEB_017",
+    "konu": "Web Performans Optimizasyonu ve Core Web Vitals",
+    "kategori": "Web_Development",
+    "alt_kategori": "Modern_Konseptler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Code Splitting uygulamayı küçük parçalara böler. Lazy loading sadece gerekli component'ler yüklenir, route-based splitting (her sayfa ayrı chunk), dynamic imports kullanılır. React.lazy ve Suspense, Webpack/Vite otomatik destekler. Bundle size küçülür, initial load hızlanır. Image Optimization web performansının kritik kısmıdır. WebP format (JPEG'den %30 daha küçük), responsive images (farklı ekran boyutları için farklı boyutlar), lazy loading (viewport'a girince yükle), Next.js Image component otomatik optimize eder, Cloudinary, Imgix gibi servisler kullanılabilir. Caching Strategies: Browser caching (Cache-Control headers), CDN caching (statik dosyalar edge'de), service workers (offline support, PWA), Redis (server-side caching). Core Web Vitals Google'ın ranking faktörleridir. LCP (Largest Contentful Paint) 2.5 saniye altı iyi, en büyük content'in yüklenmesi. FID (First Input Delay) 100ms altı iyi, kullanıcı etkileşimine cevap süresi. CLS (Cumulative Layout Shift) 0.1 altı iyi, layout kaymalarını ölçer. Lighthouse Chrome DevTools'da performans audit'i yapar. Suggestions verir - opportunities ve diagnostics. PageSpeed Insights online tool, real user metrics gösterir. Web.dev/measure sitesinde test yapılabilir. Performans optimizasyonu conversion rate'i artırır - Amazon 100ms delay %1 revenue kaybı demektir. Mobile optimization kritik - kullanıcıların %60'ı mobil cihazda.",
+    "tags": ["performance", "optimization", "code_splitting", "lazy_loading", "caching", "core_web_vitals", "LCP", "lighthouse", "image_optimization"]
+  },
+  {
+    "id": "WEB_018",
+    "konu": "Testing, Version Control ve CI/CD",
+    "kategori": "Web_Development",
+    "alt_kategori": "Modern_Konseptler",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Orta",
+    "icerik": "Jest JavaScript test framework'üdür. React Testing Library ile birlikte kullanılır, unit tests (fonksiyonları test etme), mocking (fake data/functions), snapshot testing (component output'u kaydetme), coverage reports içerir. describe/it/expect syntax kullanır. Cypress end-to-end testing için popülerdir. Browser automation (gerçek tarayıcıda test), real user scenarios (signup flow, checkout process), time-travel debugging, screenshot/video recording. Playwright modern E2E testing tool'udur. Multi-browser (Chrome, Firefox, Safari), paralel test execution, Microsoft tarafından geliştirildi. Vitest Vite-native test framework'üdür, Jest-compatible, çok hızlı. Test coverage %80+ olmalı. Git distributed version control'dür. Branching strategies (Git Flow, GitHub Flow), pull requests (code review), merge conflicts çözme. Git komutları: clone, add, commit, push, pull, branch, merge. GitHub/GitLab/Bitbucket code hosting platformlarıdır. Issues (bug tracking), projects (kanban boards), actions/CI (automation), code review, wiki/documentation içerir. Open source contribution için GitHub. CI/CD (Continuous Integration / Continuous Deployment) otomasyondur. GitHub Actions (YAML workflow), Jenkins (Java-based, pluggable), GitLab CI (GitLab entegre), CircleCI, Travis CI kullanılır. Pipeline: code push → tests run → build → deploy. Automated testing her commit'te çalışır, bugs erken yakalanır. Infrastructure as Code (IaC) altyapıyı kod olarak yönetir. Terraform cloud resources oluşturur, Ansible configuration management yapar.",
+    "tags": ["testing", "jest", "cypress", "playwright", "git", "github", "CI_CD", "automation", "version_control", "deployment"]
+  },
+  {
+    "id": "WEB_019",
+    "konu": "Cloud Platforms - AWS, GCP, Azure ve Deployment",
+    "kategori": "Web_Development",
+    "alt_kategori": "Cloud_DevOps",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "İleri",
+    "icerik": "AWS (Amazon Web Services) en büyük cloud provider'dır. EC2 (virtual servers - t2.micro free tier), S3 (object storage - dosya hosting), RDS (managed databases - PostgreSQL, MySQL), Lambda (serverless functions - event-driven), API Gateway (API management), CloudFront (CDN - content delivery), Elastic Beanstalk (PaaS - kolay deployment), Amplify (full-stack deployment). Netflix, Airbnb AWS kullanır. Google Cloud Platform (GCP) Google'ın cloud servisi. Compute Engine (VM'ler), Cloud Functions (serverless), Firebase (mobile/web backend - real-time database, authentication, hosting), Cloud Run (containerized apps), BigQuery (data warehouse). Spotify, Snapchat GCP kullanır. Microsoft Azure Microsoft'un cloud platformu. Virtual Machines, Azure Functions, App Service (web apps), Cosmos DB (NoSQL), Azure DevOps. Enterprise şirketlerde popüler - SAP, Adobe kullanır. Vercel frontend deployment için ideal - Next.js creators, automatic previews (her PR için), edge functions, zero-config. Netlify static site hosting, serverless functions, form handling, CDN içerir. JAMstack için mükemmel. Railway / Render modern deployment platformları. Database hosting, easy setup, affordable. Heroku'ya alternatif. Docker containerization yapar - dependencies paketleme, consistent environments, Dockerfile ile image oluşturma, Docker Hub registry. Kubernetes container orchestration yapar - auto-scaling, load balancing, self-healing. Production'da binlerce container yönetimi. AWS EKS, GCP GKE, Azure AKS managed Kubernetes.",
+    "tags": ["cloud", "AWS", "GCP", "azure", "deployment", "vercel", "netlify", "docker", "kubernetes", "serverless", "hosting"]
+  },
+  {
+    "id": "WEB_020",
+    "konu": "Web Development Öğrenme Yol Haritası",
+    "kategori": "Web_Development",
+    "alt_kategori": "Kariyer_Rehberi",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Başlangıç",
+    "icerik": "Başlangıç (0-3 ay): HTML5, CSS3 temelleri (semantik HTML, flexbox, grid), JavaScript temelleri (variables, functions, arrays, objects, DOM manipulation), Git ve GitHub (init, add, commit, push, pull, branching), responsive design (media queries, mobile-first), Chrome DevTools kullanımı (inspect element, console, network tab), basit projeler (portfolio, landing page, to-do app). Her gün 2-3 saat çalışarak 3 ayda temelleri öğrenebilirsiniz. Frontend Yolu (3-9 ay): Modern JavaScript ES6+ (arrow functions, destructuring, async/await, modules), React veya Vue öğrenme (components, props, state, lifecycle), state management (Redux, Zustand, Context API), API ile çalışma (fetch, axios, REST API consumption), CSS framework (Tailwind CSS önerilir), Next.js veya Nuxt.js (SSR, routing, SEO), TypeScript (interfaces, types, generics). Frontend development öğrenmek 6-9 ay sürer. Backend Yolu (3-9 ay): Bir backend dili seçme (Node.js başlangıç için en kolay - JavaScript biliyorsanız), Express.js veya framework (routing, middleware, error handling), SQL temelleri ve PostgreSQL (CREATE, SELECT, JOIN, transactions), RESTful API tasarımı (HTTP methods, status codes, versioning), authentication/authorization (JWT, OAuth, session), MongoDB NoSQL (document model, queries), deployment (Railway, Render, Heroku). Backend öğrenmek 6-9 ay sürer. Full-Stack (9-18 ay): Frontend + Backend birleştirme (MERN veya PERN stack), database design (normalization, indexes, relationships), Docker basics (Dockerfile, images, containers), CI/CD pipeline (GitHub Actions), testing (Jest, Cypress), cloud deployment (AWS, Vercel), microservices (opsiyonel, advanced). Roadmap.sh sitesinde detaylı yol haritaları var.",
+    "tags": ["roadmap", "öğrenme", "yol_haritası", "başlangıç", "frontend_roadmap", "backend_roadmap", "full_stack", "eğitim"]
+  },
+  {
+    "id": "WEB_021",
+    "konu": "Kariyer İpuçları, Freelance ve Maaş Beklentileri",
+    "kategori": "Web_Development",
+    "alt_kategori": "Kariyer_Rehberi",
+    "kaynak": "Web Dev Kariyer Rehberi v1.0",
+    "zorluk_seviyesi": "Genel",
+    "icerik": "Portfolio Oluşturun: GitHub'da en az 3-5 kaliteli proje (CRUD app, e-commerce clone, dashboard), live demo'lar deploy edin (Vercel, Netlify), README'ler detaylı yazın (screenshots, tech stack, features). Pratik Yapın: Tutorial hell'den çıkın - kendi projelerinizi yapın, clone projects (Twitter, Netflix, Airbnb clone'ları), Figma designs'ları code'a çevirin (Frontend Mentor, DevChallenges). Open Source'a Katkı: Gerçek dünya projeleri deneyimi, code review öğrenme, networking. Good first issue tag'li issue'lar bulun. Networking: Developer topluluklarına katılın (Discord: Reactiflux, Vuejs, Python, Frontend Developers; Reddit: r/webdev, r/reactjs; local meetups: İstanbul Coders, Frontend İstanbul). Blog Yazın: Dev.to, Medium, Hashnode'da yazın. SEO için kendi domain alın. Öğrendiklerinizi yazarak pekiştirin. Kod Kalitesi: Clean code principles, SOLID prensipleri, design patterns (MVC, Observer, Factory), refactoring, code reviews. DevTools Master: Chrome DevTools, React DevTools, Redux DevTools. Performance profiling, memory leaks bulma. Freelance ve Remote: Upwork, Freelancer, Fiverr (başlangıç için), Toptal, Gun.io (senior için, sıkı screening), Remote job boards (WeWorkRemotely, RemoteOK, Remotive), LinkedIn (aktif olun, recruiter'lar ulaşır). Maaş Türkiye (2025): Junior 20-35K TL, Mid-level 35-70K TL, Senior 70-150K+ TL. Remote yurt dışı: Junior 50-80K$, Mid 80-120K$, Senior 120-200K+$. FAANG Senior 200-400K$ total comp. Full-stack geliştiriciler %10-20 daha fazla kazanır. Kaynaklar: freeCodeCamp, The Odin Project (tam curriculum), MDN Web Docs, Web.dev, JavaScript.info, Scrimba (interactive), Codecademy.",
+    "tags": ["kariyer", "portfolio", "freelance", "remote", "maaş", "salary", "networking", "open_source", "kaynaklar", "resources"]
+  }
+]
