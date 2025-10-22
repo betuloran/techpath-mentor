@@ -13,6 +13,24 @@ Bu proje, öğrencilere ve kariyer değiştirenlere yönelik, **özel olarak haz
 * **Kolay Kullanım:** Streamlit tabanlı web arayüzü ile hızlı ve etkileşimli bir sohbet deneyimi sunar.
 * **Kaynak Gösterimi:** Yanıtların hangi veri setlerine dayandığı gösterilerek güvenilirlik artırılır.
 
+## 📚 Veri Seti
+
+### Veri Seti Metodolojisi (Derleme ve Kaynaklandırma)
+
+Hazır bir kurumsal veri seti bulunmadığından, veri setimiz şu şekilde yapay zeka destekli derleme ile oluşturulmuştur:
+
+* **Konu Belirleme:** Öğrencilerin en çok merak ettiği 4 ana başlık belirlendi (AI, Web, Siber Güvenlik, Kurumsal IT).
+
+* **Derleme:** Her bir başlık için, sektörel raporlar, uzman blogları ve popüler teknik dokümantasyonlar baz alınarak bir bilgi bankası metni oluşturuldu.
+
+* **Türkçe/Jargon Dengelemesi:** Metinler genel olarak Türkçe kalırken; REST API, Cloud, IaaS, Deployment gibi IT dünyasında yaygın kullanılan teknik İngilizce jargonlar, öğrencinin sektöre adapte olması amacıyla bilerek metin içinde korunmuştur.
+
+* **Format ve Metadata:** Veri seti JSON formatına çevrilmiş ve her içeriğe kaynak ("Mentor Bilgi Bankası - Yapay Zeka Destekli Derleme"), konu ve id gibi metadata bilgileri eklenmiştir.
+
+### Veri Seti İçeriği
+
+Veri seti, her biri JSON formatında tutulan 14 ana dosyadan oluşmaktadır.
+
 ## 🛠️ Kullanılan Teknolojiler
 
 | Kategori | Teknoloji | Açıklama |
@@ -24,4 +42,10 @@ Bu proje, öğrencilere ve kariyer değiştirenlere yönelik, **özel olarak haz
 | **Veritabanı** | ChromaDB (In-Memory) | Vektörlerin hızlı erişim için bellekte depolanması. |
 | **Veri İşleme** | JQ Syntax | JSON dosyalarından sadece `icerik` alanını çekme. |
 
-## 📁 Proje Yapısı
+### ⚙️ Proje Çalışma Kılavuzu
+
+## 1. Ortam Kurulumu
+
+Proje, Anaconda/Miniforge gibi harici Python ortamlarından kaynaklanan çakışmaları önlemek için özel bir sanal ortamda (venv) çalıştırılmalıdır.
+
+
