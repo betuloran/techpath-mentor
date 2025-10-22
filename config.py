@@ -5,12 +5,18 @@ Proje sabitleri, model isimleri ve yapılandırma ayarları
 
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
 # Ortam değişkenlerini yükle
 load_dotenv()
 
-# API Anahtarları
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# API Anahtarları - Streamlit Secrets desteği
+try:
+    # Önce Streamlit secrets'tan dene (deployment için)
+    GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY", None)
+except:
+    # Yoksa .env'den al (local için)
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Model Ayarları
 EMBEDDING_MODEL = "models/text-embedding-004"
