@@ -170,7 +170,7 @@ def initialize_chatbot():
     
     os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
     
-    # Session için benzersiz ID oluştur (sadece ilk çağrıda)
+    # Session için benzersiz ID oluştur
     if 'session_id' not in st.session_state:
         import time
         st.session_state.session_id = f"session_{int(time.time())}"
@@ -294,7 +294,7 @@ def main():
     if "messages" not in st.session_state:
         st.session_state.messages = []
     
-    # ⭐ ÖRNEK SORU İŞLEME - ARTIK qa_chain ERİŞİLEBİLİR! ⭐
+    # ÖRNEK SORU İŞLEME 
     if hasattr(st.session_state, 'example_query'):
         example_prompt = st.session_state.example_query
         delattr(st.session_state, 'example_query')
@@ -305,7 +305,7 @@ def main():
         # Bot yanıtını oluştur
         with st.spinner("🤔 Düşünüyorum..."):
             try:
-                response = qa_chain.invoke(example_prompt)  # ← ARTIK ÇALIŞIR!
+                response = qa_chain.invoke(example_prompt) 
                 answer = response['result']
                 st.session_state.messages.append({"role": "assistant", "content": answer})
             except Exception as e:
@@ -361,7 +361,7 @@ def main():
                         st.error(error_msg)
                         st.session_state.messages.append({"role": "assistant", "content": error_msg})
     
-    # Welcome message (ilk açılışta)
+    # Welcome message
     if len(st.session_state.messages) == 0:
         with st.chat_message("assistant", avatar="🤖"):
             st.markdown("""
