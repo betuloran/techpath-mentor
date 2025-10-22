@@ -170,12 +170,18 @@ def initialize_chatbot():
     
     os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
     
+    # Session için benzersiz ID oluştur (sadece ilk çağrıda)
+    if 'session_id' not in st.session_state:
+        import time
+        st.session_state.session_id = f"session_{int(time.time())}"
+    
     try:
         with st.spinner("🚀 Chatbot hazırlanıyor..."):
             documents = load_documents()
             if not documents:
                 return None
-            qa_chain = setup_rag_pipeline(documents)
+            # Session ID'yi pipeline'a gönder
+            qa_chain = setup_rag_pipeline(documents, st.session_state.session_id)
         st.success("✅ Chatbot hazır! Sorularınızı sorabilirsiniz.")
         return qa_chain
     except Exception as e:
@@ -221,12 +227,20 @@ def main():
         st.markdown("---")
         
         # Kapsam
-        st.markdown("### 📚 Kapsam Alanları")
+        st.markdown("### 📚 Kapsam Alanlarından Örnekler")
         areas = [
             ("🤖", "AI & Veri Bilimi", "Python, TensorFlow, PyTorch"),
             ("🌐", "Web Geliştirme", "React, Node.js, Django"),
             ("🔒", "Siber Güvenlik", "Pentesting, SOC, Sertifikalar"),
-            ("🏢", "Kurumsal IT", "Banka, Telekom Rolleri")
+            ("🏢", "Kurumsal IT", "Banka, Telekom Rolleri"),
+            ("☁️", "Bulut Bilişim", "AWS, Azure, GCP"),
+            ("📱", "Mobil Geliştirme", "iOS, Android, Flutter"),
+            ("🛠️", "DevOps & Altyapı", "CI/CD, Docker, Kubernetes"),
+            ("🎮", "Oyun Geliştirme", "Unity, Unreal Engine, C#"),
+            ("📊", "Veri Analitiği", "SQL, Tableau, Power BI"),
+            ("🧠", "Makine Öğrenimi", "Scikit-learn, XGBoost, ML Ops")
+            
+
         ]
         
         for emoji, title, desc in areas:
